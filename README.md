@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# diyourself-capstone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+DIYourself is a one-stop shop for DIY project plans you can access for free and also contribute to.
 
-In the project directory, you can run:
+### Problem
 
-### `npm start`
+If you have ever decided to indulge yourself in a DIY project, went online in search for project plans you could use or even just as inspiration for your unique projects, you would have noticed that there isn't one website where you could find everything you need; instead you would have to search multiple different websites and watch multiple youtube videos to find one that you can work with, using the tools you already own.
+This website is meant to solve that problem and be the one place where you can find a variety of project plans you can use regardless of what tools you have.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### User Profile
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+User could be anyone from a veteran woodworker to somebody who just decided to try on building a coffee table for himself.
 
-### `npm test`
+### Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Features include having access to a variety of project plans, i.e. coffee tables, dressers, chairs, bookshelves, plant stands/shelves, dining/study tables, etc. Users are also able to signup to become a contributor and gain a following.
 
-### `npm run build`
+## Implementation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+json
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### APIs
 
-### `npm run eject`
+-
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Sitemap
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Home Page
+- Projects : tables, chairs, dressers, plants, etc.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Mockups
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-
 
-## Learn More
+### Data
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+using a json file - crud
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Endpoints
 
-### Code Splitting
+-
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Auth
 
-### Analyzing the Bundle Size
+member login : save plans you like + to follow contributors
+contributor login : conrtibute plans + gain followers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Roadmap
 
-### Making a Progressive Web App
+- laayout, styling
+- use data from json and display on site
+- animations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Nice-to-haves
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-
