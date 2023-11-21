@@ -1,18 +1,22 @@
 import React from "react";
 import "./NavBar.scss";
-// import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-function NavBar() {
+const NavBar = () => {
+  const location = useLocation();
+
   return (
-    <div className="navbar">
+    <div className={location.pathname === "/" ? "navbar" : "navbar-top"}>
       <nav className="nav">
-        <h1 className="nav-logo">Logo</h1>
-        <p>plans</p>
+        <Link to="/">
+          <h1 className="nav-logo">Logo</h1>
+        </Link>
+        <Link to="/projects">Projects</Link>
         <p>searcch bar</p>
         <p>saved projects</p>
       </nav>
     </div>
   );
-}
+};
 
 export default NavBar;
