@@ -1,9 +1,17 @@
-import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.scss";
+import NavBar from "./components/NavBar/NavBar";
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
   return (
     <div className="App">
-      <h1>DIYorself</h1>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
