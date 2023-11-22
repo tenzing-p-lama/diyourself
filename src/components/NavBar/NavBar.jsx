@@ -12,7 +12,7 @@ const NavBar = () => {
           <h1 className="nav-logo">Logo</h1>
         </Link>
         <Link to="/projects">Projects</Link>
-        <p>searcch bar</p>
+        <p>search bar</p>
         <p>saved projects</p>
       </nav>
     </div>
