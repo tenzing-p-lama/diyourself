@@ -30,74 +30,74 @@
     "reference": "https://www.woodshopdiaries.com/how-to-build-a-modern-dresser/",
     "steps": [
       {
-        "stepNumber": 1,
-        "stepTitle": "Cut Plywood and Assemble Main Dresser Box",
+        "id": 1,
+        "stepTitle": "Step 1: Cut Plywood and Assemble Main Dresser Box",
         "detail": "Once you have a top, bottom and two side panels cut for the dresser body, apply some iron-on edge banding to all the sides of the plywood that will be exposed. Sand all the pieces and use ¾″ pocket holes and 1 ¼″ pocket hole screws to assemble the main body like shown here. Use wood glue on all these joints WITH the screws for a more rigid hold.",
         "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step1.jpg"
       },
       {
-        "stepNumber": 2,
-        "stepTitle": "Install Middle Dresser Divider Panel",
+        "id": 2,
+        "stepTitle": "Step 2: Install Middle Dresser Divider Panel",
         "detail": "Once the glue dries on the main body, cut and install a middle divider panel. Cut this so that it's 1” narrower than the main dresser body so that you can install it 1” inset from the front edge. Use pocket holes and screws again here and double check often that it's centered in the box.",
         "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step2.jpg"
       },
       {
-        "stepNumber": 3,
-        "stepTitle": "Install Modern Dresser Drawer Dividers",
+        "id": 3,
+        "stepTitle": "Step 3: Install Modern Dresser Drawer Dividers",
         "detail": "Use scrap plywood for this, but you can also use 1x3s or a similar size board. They don’t have to be an exact width as they’re mainly just for looks. After applying edge banding to the front edges, glue and nail two at the top and two at the bottom keeping them 1” inset from the front edge. Then, drill pocket holes to attach the 4 in the middle. These need to be 8 ½” apart, so cut a spacer block to help keep them in place while driving the screws. Again, these are 1” inset from the front edge as well.",
         "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step3.jpg"
       },
       {
-        "stepNumber": 4,
-        "stepTitle": "Install Drawer Slides",
+        "id": 4,
+        "stepTitle": "Step 4: Install Drawer Slides",
         "detail": "Install these 1” inset from the front edge of the dresser directly above each divider piece. Make sure each slide is square and straight before driving the screws.",
         "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step4.jpg"
       },
       {
-        "stepNumber": 5,
-        "stepTitle": "Build Modern Dresser Drawer Boxes",
+        "id": 5,
+        "stepTitle": "Step 5: Build Modern Dresser Drawer Boxes",
         "detail": "Cut some 7″ wide strips off a ¾” plywood sheet for the drawer boxes. Then cut all the drawer box pieces to length from these strips on the miter saw to make 6 identical drawer boxes like this. Also cut the ¼″ plywood bottom panels to size as well. The bottom plywood panel sits inside dadoes cut on the drawer box sides, so after the pieces are cut to size, set the blade height on the table saw to cut the ¼” dadoes. (You can also use a router for this instead). Edge band the tops of the drawer pieces, drill pocket holes and assemble the drawer boxes with 1 ¼″ pocket hole screws like shown here.",
         "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step5.jpg"
       },
       {
-        "stepNumber": 6,
-        "stepTitle": "Install Modern Dresser Drawers",
+        "id": 6,
+        "stepTitle": "Step 6: Install Modern Dresser Drawers",
         "detail": "Once all six drawers were assembled, install them into the dresser body.",
         "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step6.jpg"
       },
       {
-        "stepNumber": 7,
-        "stepTitle": "Add Drawer Fronts",
+        "id": 7,
+        "stepTitle": "Step 7: Add Drawer Fronts",
         "detail": "Install the drawer fronts using 1 ¼” wood screws from the inside of the drawer boxes so that they cover the drawer box openings and are ⅛” from the dresser sides. The design calls for leaving most of the divider pieces exposed and allow space between the drawer fronts. There is nothing scientific or technical here—it’s purely just for looks. So if you want to make your drawer fronts larger to hide the dividers, you definitely can. Now the dresser body is complete and all that’s left is the base.",
         "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step7.jpg"
       },
       {
-        "stepNumber": 8,
-        "stepTitle": "Assemble Modern Dresser Base Frame",
+        "id": 8,
+        "stepTitle": "Step 8: Assemble Modern Dresser Base Frame",
         "detail": "Cut the base frame pieces to length and drill pocket holes into the ends of the short pieces to assemble a 2×4 frame that will help support the weight of the dresser in the middle. Assemble this super basic frame using pocket hole screws making sure to get the piece in the middle centered.",
         "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step8.jpg"
       },
       {
-        "stepNumber": 9,
-        "stepTitle": "Cut Dresser Legs",
+        "id": 9,
+        "stepTitle": "Step 9: Cut Dresser Legs",
         "detail": "For the legs, use some poplar. But, you can also use standard 1x lumber or ¾” plywood for the legs if you want. Once you have the first leg cut out with a jig saw, sand it and use it as a template to trace out three more from the same board.",
         "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step9.jpg"
       },
       {
-        "stepNumber": 10,
-        "stepTitle": "Install Modern Dresser Legs",
+        "id": 10,
+        "stepTitle": "Step 10: Install Modern Dresser Legs",
         "detail": "After they are all sanded, bring the base back out and used some wood glue, a speed square and a couple 2 ½” wood screws per leg to attach them at each corner at a 45 degree angle.",
         "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step10.jpg"
       },
       {
-        "stepNumber": 11,
-        "stepTitle": "Attach Base to Main Dresser Body",
+        "id": 11,
+        "stepTitle": "Step 11: Attach Base to Main Dresser Body",
         "detail": "Use several 2” wood screws to attach the base to the bottom plywood panel, then flip it back over.",
         "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step11.jpg"
       },
       {
-        "stepNumber": 12,
-        "stepTitle": "Attach Back Panel",
+        "id": 12,
+        "stepTitle": "Step 12: Attach Back Panel",
         "detail": "And finally, staple the ¼” plywood backer onto the back of the dresser and reinstall the drawers. And now she’s ready for stain or paint or whatever you would want to finish it with. You can add handles or knobs to this or leave them off for a more minimalist look. But if you want to do without hardware, you could use the drawer slides that you can push to open for this instead.",
         "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step12.jpg"
       }
@@ -106,7 +106,10 @@
   {
     "id": 2,
     "title": "Modern Bathroom Vanity with Drawers",
-    "image": "./images/Vanity__modernBathroom/Vanity__modernBathroom-Finish1.jpg",
+    "image": [
+      "/images/Vanity__modernBathroom/Vanity__modernBathroom-Finish1.jpg",
+      "/images/Vanity__modernBathroom/Vanity__modernBathroom-Finish2.jpg"
+    ],
     "description": "Build a beautiful modern bathroom vanity. With large drawers on the bottom for lots of storage and open shelf in the middle to store towels and other necessities in plain sight, this vanity is perfect for a guest bathroom. This vanity is made to fit an off-the-shelf 43” x 22” vanity. So you can finish and install your vanity with a sink in a weekend!",
     "category": "Vanity",
     "materials": [
@@ -151,83 +154,87 @@
     "reference": "https://learn.kregtool.com/plans/modern-bathroom-vanity-with-drawers-on-the-bottom/",
     "steps": [
       {
-        "stepNumber": 1,
-        "stepTitle": "Build the sides",
+        "id": 1,
+        "stepTitle": "Step 1: Build the sides",
         "detail": "Cut the legs, side top skirt and side panel pieces. Assemble the sides of the vanity by drilling pocket holes set for 3/4” material in the side of the skirt and panel pieces. Attach them to the legs with 1 1/4” pocket holes so the skirt is flush with the top and inside of the legs and the panel is flush with the bottom and inside of the legs.",
-        "images": "image"
+        "images": "/images/Vanity__modernBathroom/Vanity__modernBathroom-Step1.jpg"
       },
       {
-        "stepNumber": 2,
-        "stepTitle": "Attach the toe kick",
+        "id": 2,
+        "stepTitle": "Step 2: Attach the toe kick",
         "detail": "Drill pocket holes in the sides and top of the toe kick. Attach the toe kick between the assembled sides so it is set back from the front 2 1/2” (flush with the edge of the side panel) using 1 1/4” pocket hole screws.",
-        "images": "image"
+        "images": "/images/Vanity__modernBathroom/Vanity__modernBathroom-Step2.jpg"
       },
       {
-        "stepNumber": 3,
-        "stepTitle": "Attach the base",
+        "id": 3,
+        "stepTitle": "Step 3: Attach the base",
         "detail": "Drill pocket holes set for 3/4” material in the sides of the base piece. Be aware of where the toe kick will be so you make sure your pocket holes are not in the same spot. Attach the base piece to the sides so that the back is flush with the back (it'll be set back from the front 3/4”) using 1 1/4” pocket hole screws. Also, attach the base to the pocket holes drilled in the toe kick with 1 1/4” pocket hole screws.",
-        "images": "image"
+        "images": "/images/Vanity__modernBathroom/Vanity__modernBathroom-Step3.jpg"
       },
       {
-        "stepNumber": 4,
-        "stepTitle": "Build the shelf",
+        "id": 4,
+        "stepTitle": "Step 4: Build the shelf",
         "detail": "One of the shelf slats will have to be ripped down to 7” to fit the vanity. Use a table saw or circular saw with a guide track to cut it down. Drill pocket holes set for 3/4” material in the edge of the outer shelf slats. Using wood glue and 1 1/4” pocket hole screws, attach the 3 shelf slats so they make one large shelf.",
-        "images": "image"
+        "images": "/images/Vanity__modernBathroom/Vanity__modernBathroom-Step4.jpg"
       },
       {
-        "stepNumber": 5,
-        "stepTitle": "Notch out the shelf",
+        "id": 5,
+        "stepTitle": "Step 5: Notch out the shelf",
         "detail": "To fit the shelf in the vanity, notch out room for the 2x3 legs to fit into the corners with a jigsaw.",
-        "images": "image"
+        "images": "/images/Vanity__modernBathroom/Vanity__modernBathroom-Step5.jpg"
       },
       {
-        "stepNumber": 6,
-        "stepTitle": "Attach the drawer divider",
+        "id": 6,
+        "stepTitle": "Step 6: Attach the drawer divider",
         "detail": "Drill pocket holes set for 3/4” material in the top of the drawer divider. I put 3 pocket holes on one side and two in between them on the other to keep the drawer divider vertical. Attach it to the center bottom of the assembled shelf with 1 1/4” pocket hole screws.",
-        "images": "image"
+        "images": "/images/Vanity__modernBathroom/Vanity__modernBathroom-Step6.jpg"
       },
       {
-        "stepNumber": 7,
-        "stepTitle": "Attach the shelf",
+        "id": 7,
+        "stepTitle": "Step 7: Attach the shelf",
         "detail": "Drill pocket holes set for 3/4” material in the notched out sides of the shelf (so the screws will go into the legs pieces). Carefully fit the shelf into the vanity between the sides. Ensure the notches fit snuggly around the legs. Clamp tight to the side panels and so the drawer divider is snug to the base. Secure with 1 1/4” pocket hole screws into the legs. Then secure the drawer divider to the base with screws from the underside. You can use 1 1/4” pocket hole screws for this if you don't want to buy other screws. Make sure the drawer divider is centered on the base.",
-        "images": "image"
+        "images": "/images/Vanity__modernBathroom/Vanity__modernBathroom-Step7.jpg"
       },
       {
-        "stepNumber": 8,
-        "stepTitle": "Attach the top skirt",
+        "id": 8,
+        "stepTitle": "Step 8: Attach the top skirt",
         "detail": "Drill pocket holes for 3/4” material in the sides of the front & back top skirt pieces. Attach the back piece so it is flush with the back of the legs (also, you can put the pocket holes facing the back since they will be up against the wall). Attach the front piece so it is set back from the front of the leg by 3/4”. Secure with 1 1/4” pocket hole screws.",
-        "images": "image"
+        "images": "/images/Vanity__modernBathroom/Vanity__modernBathroom-Step8.jpg"
       },
       {
-        "stepNumber": 9,
-        "stepTitle": "Prep the drawer box pieces",
+        "id": 9,
+        "stepTitle": "Step 9: Prep the drawer box pieces",
         "detail": "Cut the drawer box pieces out of the 1/2” plywood. Cut a 1/4” wide by 1/4” deep groove in the inside of the front and side drawer box pieces 1/4” up from the bottom.",
-        "images": "image"
+        "images": "/images/Vanity__modernBathroom/Vanity__modernBathroom-Step9.jpg"
       },
       {
-        "stepNumber": 10,
-        "stepTitle": "Build the drawer box",
+        "id": 10,
+        "stepTitle": "Step 10: Build the drawer box",
         "detail": "Drill pocket holes set for 1/2” material in the outside sides of the drawer box side pieces (not the same side as the groove). Build the drawer box by securing the side pieces to the front and back pieces with wood glue and 1” pocket hole screws. Make sure the top of all the drawer box pieces is flush. The bottom of the drawer box back piece should be flush with the top of the groove.",
-        "images": "image"
+        "images": "/images/Vanity__modernBathroom/Vanity__modernBathroom-Step10.jpg"
       },
       {
-        "stepNumber": 11,
-        "stepTitle": "Attach the drawer box bottom",
+        "id": 11,
+        "stepTitle": "Step 11: Attach the drawer box bottom",
         "detail": "Slide the drawer box bottom piece under the back piece and into the groove on the sides and front. Ensure the box is square and then secure the drawer box bottom to the back piece with 5/8” brad nails.",
-        "images": "image"
+        "images": "/images/Vanity__modernBathroom/Vanity__modernBathroom-Step11.jpg"
       },
       {
-        "stepNumber": 12,
-        "stepTitle": "Install the drawers",
+        "id": 12,
+        "stepTitle": "Step 12: Install the drawers",
         "detail": "Install the drawer slides so the front of the drawer box is flush with the front of the drawer divider. Clamp the drawer fronts to the drawer box so there is an 1/8” gap on the sides and tops of the drawer fronts. Secure with 1 1/4” screws through the inside of the drawer.",
-        "images": "image"
+        "images": "/images/Vanity__modernBathroom/Vanity__modernBathroom-Finish2.jpg"
       }
     ]
   },
   {
     "id": 3,
     "title": "Transitional Coffee Table",
-    "image": "./images/Table__modernCoffee/Table__modernCoffee-Finish2.jpg",
+    "image": [
+      "/images/Table__modernCoffee/Table__modernCoffee-Finish1.jpg",
+      "/images/Table__modernCoffee/Table__modernCoffee-Finish2.jpg",
+      "/images/Table__modernCoffee/Table__modernCoffee-Finish3.jpg"
+    ],
     "description": "This simple coffee table is designed with subtle tapered bottom legs and recessed top and can be incorporated into any style of home. This is a simple weekend project for DIY’ers of any skill level. Overall size is 45.5 x 22.5x15.5”.",
     "category": "Table",
     "materials": [
@@ -258,53 +265,56 @@
     "reference": "https://learn.kregtool.com/plans/modern-transitional-coffee-table/",
     "steps": [
       {
-        "stepNumber": 1,
-        "stepTitle": "Prepare all parts and drill pocket holes",
+        "id": 1,
+        "stepTitle": "Step 1: Prepare all parts and drill pocket holes",
         "detail": "Cut all parts to size as per the cut diagram (see steps two and three if you’d like to cut the angles on the legs). Drill pocket holes on the 2x2 boards in the locations shown to accommodate 2-1/4” pocket-hole screws, paying special attention to the 19.5” pieces which only have one pocket hole on each end. For the plywood top and shelf, drill holes to accommodate 3/4” pocket hole screws.",
-        "images": "image"
+        "images": "/images/Table__modernCoffee/Table__modernCoffee-Step1.jpg"
       },
       {
-        "stepNumber": 2,
-        "stepTitle": "Taper cut legs (Optional)",
+        "id": 2,
+        "stepTitle": "Step 2: Taper cut legs (Optional)",
         "detail": "Steps two and three are optional. You can leave the legs straight if desired. To make the first cut, measure and mark at 0.5” along the bottom of the leg. Then measure and mark 2” from the bottom of the leg. Connect those two marks together. Clamp the board down with the part you are cutting hanging over the edge of your workbench. Carefully cut using your jigsaw along the line.",
-        "images": "image"
+        "images": "/images/Table__modernCoffee/Table__modernCoffee-Step2.jpg"
       },
       {
-        "stepNumber": 3,
-        "stepTitle": "Taper cut legs (Optional)",
+        "id": 3,
+        "stepTitle": "Step 3: Taper cut legs (Optional)",
         "detail": "To make the second cut, rotate the leg 45° so that the cut you just made is now facing down on your workbench. Again, measure and mark at 0.5” along the bottom of the leg. Then measure and mark 2” from the bottom of the leg. Connect those two marks together. Again, clamp down the board with the part you are cutting hanging over the edge of your workbench. Carefully cut using your jigsaw along the line.",
-        "images": "image"
+        "images": "/images/Table__modernCoffee/Table__modernCoffee-Step3.jpg"
       },
       {
-        "stepNumber": 4,
-        "stepTitle": "Attach legs to spans",
+        "id": 4,
+        "stepTitle": "Step 4: Attach legs to spans",
         "detail": "Attach legs to the 42.5” spans as shown in the diagram with wood glue and 2-1/4” pocket-hole screws. Note that the pocket-holes should be facing downward. The bottom span should be attached 4.5” from the bottom of the leg, but you can customize this if you want a lower or higher shelf.",
-        "images": "image"
+        "images": "/images/Table__modernCoffee/Table__modernCoffee-Step4.jpg"
       },
       {
-        "stepNumber": 5,
-        "stepTitle": "Connect legs to side spans",
+        "id": 5,
+        "stepTitle": "Step 5: Connect legs to side spans",
         "detail": "Attach the side spans as shown using wood glue and 2-1/4” pocket hole screws, taking note of the location of the single pocket hole. They should be on the outer edge. This avoids the screws colliding with the screws from the front span in the leg.",
-        "images": "image"
+        "images": "/images/Table__modernCoffee/Table__modernCoffee-Step5.jpg"
       },
       {
-        "stepNumber": 6,
-        "stepTitle": "Attach top and shelf",
+        "id": 6,
+        "stepTitle": "Step 6: Attach top and shelf",
         "detail": "Attach the top and shelf 1/4” from the top of the spans to give the table a recessed look. You can use a scrap piece of 1/4” stock if you have it around, or simply measure and mark at various locations to help guide you. Attach with 1-1/4” pocket-hole screws around the perimeter.",
-        "images": "image"
+        "images": "/images/Table__modernCoffee/Table__modernCoffee-Step6.jpg"
       },
       {
-        "stepNumber": 7,
-        "stepTitle": "Sand and stain",
+        "id": 7,
+        "stepTitle": "Step 7: Sand and stain",
         "detail": "Sand, stain and finish with a matte or satin clear coat. For reference, the stain colour used here is Early American by Minwax on white oak.",
-        "images": "image"
+        "images": "/images/Table__modernCoffee/Table__modernCoffee-Step7.jpg"
       }
     ]
   },
   {
     "id": 4,
     "title": "Retro Side Table",
-    "image": "./images/Table__retroSideTable/Table__retroSideTable_Finish1.jpg",
+    "image": [
+      "/images/Table__retroSideTable/Table__retroSideTable_Finish1.jpg",
+      "/images/Table__retroSideTable/Table__retroSideTable_Finish2.jpg"
+    ],
     "description": "Retro Mid Century Modern Decor is coming back in style. Get ahead of the old-times and build your own stylish retro side table with a storage drawer! A great, easy build for anyone who wants great style on a tight budget!",
     "category": "Table",
     "materials": [
@@ -334,46 +344,46 @@
     "reference": "https://learn.kregtool.com/plans/diy-retro-side-table/",
     "steps": [
       {
-        "stepNumber": 1,
-        "stepTitle": "Check Dimensions & Cut List",
+        "id": 1,
+        "stepTitle": "Step 1: Check Dimensions & Cut List",
         "detail": "Prior to starting this project, check the dimensions and cut list.",
-        "images": "image"
+        "images": "/images/Table__retroSideTable/Table__retroSideTable_Step1.jpg"
       },
       {
-        "stepNumber": 2,
-        "stepTitle": "Assemble The Frame",
+        "id": 2,
+        "stepTitle": "Step 2: Assemble The Frame",
         "detail": "Once your frame pieces are cut, attach the top & bottom panels to the side panels using wood glue and 1 1/4” pocket hole screws.",
-        "images": "image"
+        "images": "/images/Table__retroSideTable/Table__retroSideTable_Step2.jpg"
       },
       {
-        "stepNumber": 3,
-        "stepTitle": "Add The Shelf",
+        "id": 3,
+        "stepTitle": "Step 3: Add The Shelf",
         "detail": "Add the shelf to the frame by using wood glue and pocket hole screws. You will need a compact drill here in order to get the screws in. If you do not have a compact drill, you can also use brad nails and wood glue to attach the shelf from the sides. Make sure to attach the frame 5 1/2” up to make room for the drawer.",
-        "images": "image"
+        "images": "/images/Table__retroSideTable/Table__retroSideTable_Step3.jpg"
       },
       {
-        "stepNumber": 4,
-        "stepTitle": "Attach Back Panel",
+        "id": 4,
+        "stepTitle": "Step 4: Attach Back Panel",
         "detail": "Attach the back panel of the table to the frame underneath the shelf. You can attach this piece with pocket holes in the back. Use wood glue and 1 1/4” screws to adhere.",
-        "images": "image"
+        "images": "/images/Table__retroSideTable/Table__retroSideTable_Step4.jpg"
       },
       {
-        "stepNumber": 5,
-        "stepTitle": "Build The Drawer",
+        "id": 5,
+        "stepTitle": "Step 5: Build The Drawer",
         "detail": "Assemble the drawer by attaching the sides with pocket holes & screws. Make sure to place the pocket holes in the back and front panels (they will be hidden by the drawer face and back panel). Next, attach the bottom panel of the drawer flush, inside the drawer frame with brad nails and wood glue. Lastly, attach the drawer front with brad nails or screws. You may have to sand and/or trim the panel in order to get it to fit without rubbing.",
-        "images": "image"
+        "images": "/images/Table__retroSideTable/Table__retroSideTable_Step5.jpg"
       },
       {
-        "stepNumber": 6,
-        "stepTitle": "Install The Drawer",
+        "id": 6,
+        "stepTitle": "Step 6: Install The Drawer",
         "detail": "Install the drawer by adding 6” long drawer slides to the frame. Follow the directions provided with your drawer slides for installation.",
-        "images": "image"
+        "images": "/images/Table__retroSideTable/Table__retroSideTable_Step6.jpg"
       },
       {
-        "stepNumber": 7,
-        "stepTitle": "Finish It Up",
+        "id": 7,
+        "stepTitle": "Step 7: Finish It Up",
         "detail": "Fill all pocket holes and sand down the table. Once sanded, stain the piece and add hardware and legs (you can find links for the products I used on my blog).",
-        "images": "image"
+        "images": "/images/Table__retroSideTable/Table__retroSideTable_Step7.jpg"
       }
     ]
   }

@@ -1,7 +1,17 @@
 .hamburger {
+  width: 1.5rem;
+  height: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
   cursor: pointer;
+  z-index: 10;
 }
-
 .burger {
-  font-size: 2rem; /* Adjust the font size as needed */
+  width: 1.5rem;
+  height: 0.2rem;
+  border-radius: 10px;
+  background-color: black;
+  transform-origin: 4.5px 0.15rem;
+  transition: all 0.3s linear;
 }

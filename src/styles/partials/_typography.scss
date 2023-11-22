@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../../assets/fonts/Montserrat-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../../assets/fonts/Montserrat-Italic.ttf") format("ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poiret One";
+  src: url("../../assets/fonts/PoiretOne-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poiret One";
+}
+h1 {
+  text-transform: uppercase;
+}
