@@ -23,14 +23,19 @@ function ProjectDetailsPage() {
   }
 
   return (
-    <div>
+    <div className="plans">
       <h1>{projectDetails.title}</h1>
-      <img src={"${projectDetails.image}"} alt={projectDetails.title} />
+      {projectDetails.image.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={`${projectDetails.title} - Image ${index + 1}`}
+        />
+      ))}
       <p>{projectDetails.description}</p>
       <p>{projectDetails.category}</p>
       <ul>Materials: {projectDetails.materials}</ul>
       <ul>Tools Required: {projectDetails.toolsRequired}</ul>
-
       <ul>Steps</ul>
       {projectDetails.steps.map((step, index) => {
         return (
@@ -38,6 +43,7 @@ function ProjectDetailsPage() {
             <h2>Step {step.stepNumber}</h2>
             <h3>{step.stepTitle}</h3>
             <p>{step.detail}</p>
+            <img src={step.images} alt={step.stepTitle} />
           </li>
         );
       })}

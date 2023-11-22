@@ -50,7 +50,7 @@ const ProjectsPage = (props) => {
                 </div>
                 <img
                   className="projects-item__image"
-                  src={project.image}
+                  src={project.image[0]}
                   alt={project.title}
                 />
               </Link>

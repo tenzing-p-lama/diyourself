@@ -1,3 +1,5 @@
+@use "../../styles/partials/mixins" as *;
+
 .navbar {
   position: absolute;
   width: 100%;
@@ -10,4 +12,23 @@
   align-items: center;
   justify-content: space-between;
   padding: 2rem 5rem;
+  &-links {
+    display: flex;
+    &__close {
+      display: none;
+      @include tablet {
+        display: flex;
+      }
+    }
+  }
+  &-link {
+    list-style-type: none;
+    padding-left: 1rem;
+  }
+}
+
+.hamburger {
+  @include tablet {
+    display: none;
+  }
 }

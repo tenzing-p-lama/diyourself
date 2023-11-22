@@ -2,7 +2,10 @@
   {
     "id": 1,
     "title": "Mid-Century Dresser",
-    "image": "./images/Dresser__Mid-Century/Dresser__Mid-Century-Finish2.jpg",
+    "image": [
+      "/images/Dresser__Mid-Century/Dresser__Mid-Century-Finish1.jpg",
+      "/images/Dresser__Mid-Century/Dresser__Mid-Century-Finish2.jpg"
+    ],
     "description": "Build a modern mid-century style dresser for your woodworking projects.",
     "category": "Dresser",
     "materials": [
@@ -30,73 +33,73 @@
         "stepNumber": 1,
         "stepTitle": "Cut Plywood and Assemble Main Dresser Box",
         "detail": "Once you have a top, bottom and two side panels cut for the dresser body, apply some iron-on edge banding to all the sides of the plywood that will be exposed. Sand all the pieces and use ¾″ pocket holes and 1 ¼″ pocket hole screws to assemble the main body like shown here. Use wood glue on all these joints WITH the screws for a more rigid hold.",
-        "images": ["../images", "image_url_2"]
+        "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step1.jpg"
       },
       {
         "stepNumber": 2,
         "stepTitle": "Install Middle Dresser Divider Panel",
         "detail": "Once the glue dries on the main body, cut and install a middle divider panel. Cut this so that it's 1” narrower than the main dresser body so that you can install it 1” inset from the front edge. Use pocket holes and screws again here and double check often that it's centered in the box.",
-        "images": ["image_url_3", "image_url_4"]
+        "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step2.jpg"
       },
       {
         "stepNumber": 3,
         "stepTitle": "Install Modern Dresser Drawer Dividers",
         "detail": "Use scrap plywood for this, but you can also use 1x3s or a similar size board. They don’t have to be an exact width as they’re mainly just for looks. After applying edge banding to the front edges, glue and nail two at the top and two at the bottom keeping them 1” inset from the front edge. Then, drill pocket holes to attach the 4 in the middle. These need to be 8 ½” apart, so cut a spacer block to help keep them in place while driving the screws. Again, these are 1” inset from the front edge as well.",
-        "images": ["image_url_5", "image_url_6"]
+        "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step3.jpg"
       },
       {
         "stepNumber": 4,
         "stepTitle": "Install Drawer Slides",
         "detail": "Install these 1” inset from the front edge of the dresser directly above each divider piece. Make sure each slide is square and straight before driving the screws.",
-        "images": ""
+        "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step4.jpg"
       },
       {
         "stepNumber": 5,
         "stepTitle": "Build Modern Dresser Drawer Boxes",
         "detail": "Cut some 7″ wide strips off a ¾” plywood sheet for the drawer boxes. Then cut all the drawer box pieces to length from these strips on the miter saw to make 6 identical drawer boxes like this. Also cut the ¼″ plywood bottom panels to size as well. The bottom plywood panel sits inside dadoes cut on the drawer box sides, so after the pieces are cut to size, set the blade height on the table saw to cut the ¼” dadoes. (You can also use a router for this instead). Edge band the tops of the drawer pieces, drill pocket holes and assemble the drawer boxes with 1 ¼″ pocket hole screws like shown here.",
-        "images": ["image_url_1", "image_url_2"]
+        "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step5.jpg"
       },
       {
         "stepNumber": 6,
         "stepTitle": "Install Modern Dresser Drawers",
         "detail": "Once all six drawers were assembled, install them into the dresser body.",
-        "images": "image"
+        "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step6.jpg"
       },
       {
         "stepNumber": 7,
         "stepTitle": "Add Drawer Fronts",
         "detail": "Install the drawer fronts using 1 ¼” wood screws from the inside of the drawer boxes so that they cover the drawer box openings and are ⅛” from the dresser sides. The design calls for leaving most of the divider pieces exposed and allow space between the drawer fronts. There is nothing scientific or technical here—it’s purely just for looks. So if you want to make your drawer fronts larger to hide the dividers, you definitely can. Now the dresser body is complete and all that’s left is the base.",
-        "images": ["image_url_1", "image_url_2"]
+        "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step7.jpg"
       },
       {
         "stepNumber": 8,
         "stepTitle": "Assemble Modern Dresser Base Frame",
         "detail": "Cut the base frame pieces to length and drill pocket holes into the ends of the short pieces to assemble a 2×4 frame that will help support the weight of the dresser in the middle. Assemble this super basic frame using pocket hole screws making sure to get the piece in the middle centered.",
-        "images": "image"
+        "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step8.jpg"
       },
       {
         "stepNumber": 9,
         "stepTitle": "Cut Dresser Legs",
         "detail": "For the legs, use some poplar. But, you can also use standard 1x lumber or ¾” plywood for the legs if you want. Once you have the first leg cut out with a jig saw, sand it and use it as a template to trace out three more from the same board.",
-        "images": "image"
+        "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step9.jpg"
       },
       {
         "stepNumber": 10,
         "stepTitle": "Install Modern Dresser Legs",
         "detail": "After they are all sanded, bring the base back out and used some wood glue, a speed square and a couple 2 ½” wood screws per leg to attach them at each corner at a 45 degree angle.",
-        "images": "image"
+        "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step10.jpg"
       },
       {
         "stepNumber": 11,
         "stepTitle": "Attach Base to Main Dresser Body",
         "detail": "Use several 2” wood screws to attach the base to the bottom plywood panel, then flip it back over.",
-        "images": "image"
+        "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step11.jpg"
       },
       {
         "stepNumber": 12,
         "stepTitle": "Attach Back Panel",
         "detail": "And finally, staple the ¼” plywood backer onto the back of the dresser and reinstall the drawers. And now she’s ready for stain or paint or whatever you would want to finish it with. You can add handles or knobs to this or leave them off for a more minimalist look. But if you want to do without hardware, you could use the drawer slides that you can push to open for this instead.",
-        "images": "image"
+        "images": "/images/Dresser__Mid-Century/Dresser__Mid-Century-Step12.jpg"
       }
     ]
   },
