@@ -34,7 +34,7 @@ const NavBar = () => {
           </li>
         </ul>
 
-        <div className="hamburger" onClick={toggleHamburger}>
+        <div className="hamburgerMenu" onClick={toggleHamburger}>
           <Hamburger isOpen={hamburger} />
         </div>
       </nav>
