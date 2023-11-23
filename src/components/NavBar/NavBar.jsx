@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.scss";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import Hamburger from "../Hamburger/Hamburger";
 
 const NavBar = () => {
@@ -14,29 +14,29 @@ const NavBar = () => {
   return (
     <div className={location.pathname === "/" ? "navbar" : "navbar-top"}>
       <nav className="nav">
-        <Link to="/">
+        <NavLink to="/">
           <h1 className="nav-logo">Logo</h1>
-        </Link>
+        </NavLink>
 
-        <ul className={hamburger ? "nav-links" : "nav-links__close"}>
-          <li className="nav-link">
-            <Link to="/projects" className="nav-link">
+        <section className="nav-menu">
+          <div className="hamburgerMenu" onClick={toggleHamburger}>
+            <Hamburger isOpen={hamburger} />
+          </div>
+
+          <ul className={hamburger ? "nav-links" : "nav-links__close"}>
+            <NavLink
+              to="/projects"
+              className="nav-link"
+              activeClassName="active-link"
+            >
               Projects
-            </Link>
-          </li>
+            </NavLink>
 
-          <li className="nav-link">
-            <p>search bar</p>
-          </li>
+            <li className="nav-link">search bar</li>
 
-          <li className="nav-link">
-            <p>saved projects</p>
-          </li>
-        </ul>
-
-        <div className="hamburgerMenu" onClick={toggleHamburger}>
-          <Hamburger isOpen={hamburger} />
-        </div>
+            <li className="nav-link">saved projects</li>
+          </ul>
+        </section>
       </nav>
     </div>
   );

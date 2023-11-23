@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import projectsJSON from "../../data/projects.json";
 
+import ImageGallery from "../../components/ImageGallery/ImageGallery.jsx";
+
 import "./ProjectDetailsPage.scss";
 
 function ProjectDetailsPage() {
-  const { id } = useParams(); // Get the project ID from the URL parameters
+  const { id } = useParams();
   const [projectDetails, setProjectDetails] = useState(null);
 
   useEffect(() => {
@@ -26,14 +28,19 @@ function ProjectDetailsPage() {
       <section className="plans-info">
         <h1 className="plans-info__desc">{projectDetails.title}</h1>
 
-        {projectDetails.image.map((image, index) => (
+        {/* {projectDetails.image.map((image, index) => (
           <img
             key={index}
             src={image}
             className="plans-info__images"
             alt={`${projectDetails.title} - Image ${index + 1}`}
           />
-        ))}
+        ))} */}
+
+        <ImageGallery
+          images={projectDetails.image}
+          alt={projectDetails.title}
+        />
 
         <h2 className="plans-info__desc">{projectDetails.description}</h2>
 
@@ -73,8 +80,11 @@ function ProjectDetailsPage() {
               src={step.images}
               alt={step.stepTitle}
             />
-            <h2 className="plans-steps__list-item">{step.stepTitle}</h2>
-            <p className="plans-steps__list-item">{step.detail}</p>
+            <div className="plans-steps__list-group">
+              <h1 className="plans-steps__list-item">{step.stepNumber}</h1>
+              <h2 className="plans-steps__list-item">{step.stepTitle}</h2>
+              <p className="plans-steps__list-item">{step.detail}</p>
+            </div>
           </li>
         );
       })}
