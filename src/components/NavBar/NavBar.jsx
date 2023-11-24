@@ -24,17 +24,10 @@ const NavBar = () => {
           </div>
 
           <ul className={hamburger ? "nav-links" : "nav-links__close"}>
-            {/* <li
-              className={`nav-link ${
-                location.pathname === "/projects" ? "active" : ""
-              }`}
-            > */}
             <Link
               to="/projects"
               className={`nav-link ${
-                location.pathname === "/projects" || "/projects/:id"
-                  ? "active"
-                  : ""
+                location.pathname === "/projects" ? "active" : ""
               }`}
             >
               Projects
