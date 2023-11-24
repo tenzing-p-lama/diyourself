@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.scss";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import Hamburger from "../Hamburger/Hamburger";
 
 const NavBar = () => {
@@ -24,13 +24,21 @@ const NavBar = () => {
           </div>
 
           <ul className={hamburger ? "nav-links" : "nav-links__close"}>
-            <NavLink
+            {/* <li
+              className={`nav-link ${
+                location.pathname === "/projects" ? "active" : ""
+              }`}
+            > */}
+            <Link
               to="/projects"
-              className="nav-link"
-              activeClassName="active-link"
+              className={`nav-link ${
+                location.pathname === "/projects" || "/projects/:id"
+                  ? "active"
+                  : ""
+              }`}
             >
               Projects
-            </NavLink>
+            </Link>
 
             <li className="nav-link">search bar</li>
 

@@ -136,7 +136,7 @@
       "Wood Glue",
       "Edge banding (optional)"
     ],
-    "tools required": [
+    "toolsRequired": [
       "Circular Saw",
       "Drill",
       "Kreg Pocket Hole Jig",
@@ -147,7 +147,7 @@
       "Nail Gun",
       "Sander"
     ],
-    "cut list": [
+    "cutList": [
       "4 Legs, 1 1/2” X 2 1/2” X 30”",
       "2 Side Top Skirt , 3/4” X 7 1/4” X 16 1/2”",
       "2 Front/Back Top Skirt , 3/4” X 7 1/4” X 39”",
@@ -272,7 +272,7 @@
       "Flat Varnish",
       "Bag Of Rags"
     ],
-    "tools required": [
+    "toolsRequired": [
       "Circular Saw",
       "Jigsaw",
       "Tape Measure",
@@ -280,7 +280,7 @@
       "Clamps",
       "Sander"
     ],
-    "cut list": [
+    "cutList": [
       "4 Legs, 1 ½ X 1 ½” X 15 ½”",
       "4 Spans, 1 ½ X 1 ½” X 42 ½”",
       "4 Side Spans , 1 ½ X 1 ½” X 19 ½”",
@@ -360,8 +360,8 @@
       "4 Tapered Table Legs",
       "4 Angled Plates For Legs"
     ],
-    "tools required": ["Miter Saw", "1 Drill", "1 Sander"],
-    "cut list": [
+    "toolsRequired": ["Miter Saw", "Drill", "Sander"],
+    "cutList": [
       "1 Top Piece, 1 X 10 X 16”",
       "1 Bottom Piece, 1 X 10 X 16”",
       "2 Side Pieces, 1 X 10 X 10",
@@ -422,6 +422,370 @@
         "stepTitle": "Finish It Up",
         "detail": "Fill all pocket holes and sand down the table. Once sanded, stain the piece and add hardware and legs (you can find links for the products I used on my blog).",
         "images": "/images/Table__retroSideTable/Table__retroSideTable_Step7.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Record Player Cabinet",
+    "image": [
+      "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Finish1.jpg",
+      "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Finish2.jpg",
+      "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Finish3.jpg"
+    ],
+    "description": "This record player storage cabinet is made completely out of plywood. It features a surface for your record player, storage for your record collection, and a display for the record you are currently playing. This could also be utilized as book or toy storage cabinet.",
+    "category": "Cabinet",
+    "materials": [
+      "1 Plywood , 3/4” Thick , Full Sheet",
+      "1 Plywood , 3/4” Thick , Half Sheet",
+      "63 1 1/4” Kreg Pocket Hole Screws",
+      "40 1 1/4” Brad Nails",
+      "1 Set Of Concealed Hinges",
+      "1 Knob",
+      "Wood Glue",
+      "Wood Filler"
+    ],
+    "toolsRequired": ["Miter Saw", "Square", "Sander"],
+    "cutList": [
+      "Bottom , 3/4” X 47” X 18”",
+      "2 Sides , 3/4” X 27” X 18”",
+      "1 Inside Panel , 3/4” X 22-1/4” X 18”",
+      "1 Record Display Base , 3/4” X 28-1/4” X 14”",
+      "1 Left Permanent Shelf , 3/4” X 18” X 18”",
+      "1 Record Display Mid Piece , 3/4” X 14” X 7-3/4”",
+      "1 Record Display Back , 3/4” X 13-3/4” X 7-3/4”",
+      "1 Top Left , 3/4” X 18” X 18”",
+      "1 Back Top Piece , 3/4” X 28-1/4” X 4”",
+      "1 Record Holder Piece , 3/4” X 28-1/4” X 4-5/8”",
+      "1 Record Storage Front , 3/4” X 29-3/4” X 8-1/2”",
+      "1 Left Door , 3/4” X 19-1/2” X 13-3/4”",
+      "1 Left Back , 1/4” X 22-1/8” X 19-1/4”"
+    ],
+    "reference": "https://learn.kregtool.com/plans/record-player-cabinet/",
+    "steps": [
+      {
+        "id": 1,
+        "stepNumber": "Step 1:",
+        "stepTitle": "Sides and Bottom Assembly",
+        "detail": "Drill pocket five holes on each end of the BOTTOM, as shown. Attach BOTTOM to SIDES, 4” from the bottom of each side using wood glue and 1-1/4” pocket hole screws.",
+        "images": "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Step1.jpg"
+      },
+      {
+        "id": 2,
+        "stepNumber": "Step 2:",
+        "stepTitle": "Attach Inside Panel",
+        "detail": "Drill four pocket holes along one of the 18” edges of the INSIDE PANEL. Attach 18” from the left SIDE with wood glue and 1-1/4” pocket hole screws”",
+        "images": "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Step2.jpg"
+      },
+      {
+        "id": 3,
+        "stepNumber": "Step 3:",
+        "stepTitle": "Attach Record Base & Shelf",
+        "detail": "Drill pocket holes as shown on the RECORD DISPLAY BASE and LEFT PERMANENT SHELF. Attach the LEFT PERMANENT SHELF 12-1/4” from the BOTTOM piece, and the RECORD DISPLAY BASE 13” from the bottom piece, and flush with the front of the cabinet, using wood glue and 1-1/4” pocket hole screws.",
+        "images": "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Step3.jpg"
+      },
+      {
+        "id": 4,
+        "stepNumber": "Step 4:",
+        "stepTitle": "Attach Record Display Mid Piece",
+        "detail": "Attach the RECORD DISPLAY MID PIECE in the center of the RECORD DISPLAY BASE (13-3/4” from each side). Secure with wood glue and 1-1/4” pocket hole screws.",
+        "images": "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Step4.jpg"
+      },
+      {
+        "id": 5,
+        "stepNumber": "Step 5:",
+        "stepTitle": "Attach Record Display Backs",
+        "detail": "Drill pocket holes as shown on the RECORD DISPLAY BACKS. Offset the holes that screw into the RECORD DISPLAY MID PIECE so that they don't run into each other when assembling. Attach with wood glue and 1-1/4” pocket hole screws.",
+        "images": "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Step5.jpg"
+      },
+      {
+        "id": 6,
+        "stepNumber": "Step 6:",
+        "stepTitle": "Attach Left Top Piece",
+        "detail": "Drill pocket holes on the underside of the TOP LEFT piece and attach 7-3/4” from the shelf location below with wood glue and 1-1/4” pocket hole screws.",
+        "images": "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Step6.jpg"
+      },
+      {
+        "id": 7,
+        "stepNumber": "Step 7:",
+        "stepTitle": "Attach Back Top Piece",
+        "detail": "Drill pocket holes in the approximate locations indicated on the diagram of the BACK TOP PIECE. Secure to the RECORD DISPLAY BACK PIECES and the sides of that area with wood glue and 1-1/4” pocket hole screws.",
+        "images": "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Step7.jpg"
+      },
+      {
+        "id": 8,
+        "stepNumber": "Step 8:",
+        "stepTitle": "Attach Record Holder",
+        "detail": "Rip RECORD HOLDER PIECE approximately in half as shown on the diagram. Table saw blade should be set to 15°. Leave a gap of about 1/4” between the boards when installing. Test a record before securing to make sure it fits. Secure with wood glue and 1-1/4” brad nails.",
+        "images": "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Step8.jpg"
+      },
+      {
+        "id": 9,
+        "stepNumber": "Step 9:",
+        "stepTitle": "Attach Back Panel",
+        "detail": "Attach 1/4” plywood BACK PANEL using 1-1/4” brad nails.",
+        "images": "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Step9.jpg"
+      },
+      {
+        "id": 10,
+        "stepNumber": "Step 10:",
+        "stepTitle": "Attach Record Front & Door",
+        "detail": "Attach RECORD DISPLAY FRONT using wood glue and 1-1/4” brad nails along the sides and bottom. Also, attach from the rear using the two pocket holes you drilled into the RECORD DISPLAY MID PIECE using 1-1/4” pocket hole screws. Using your Kreg Concealed Hinge Jig, drill holes approximately 2” from the top and bottom of the door. Mount door to left SIDE using concealed Euro hinges. You can also use alternative hinges but will need to follow the manufacturer's instructions for those specific hinges.",
+        "images": "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Step10.jpg"
+      },
+      {
+        "id": 11,
+        "stepNumber": "Step 11:",
+        "stepTitle": "Attach Hardware",
+        "detail": "Add one knob of your choice to the upper right corner of the door.",
+        "images": "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Step11.jpg"
+      },
+      {
+        "id": 12,
+        "stepNumber": "Step 12:",
+        "stepTitle": "Sand, Stain, Seal",
+        "detail": "Sand all edges of the piece well, you can also use a router to round-over the edges before sanding. Fill any voids in the plywood layers with stainable wood filler. Stain your color choice, and seal using satin polyurethane.",
+        "images": "/images/Cabinet__RecordPlayer/Cabinet__RecordPlayer-Step12.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Midcentury Modern Side Table",
+    "image": [
+      "/images/Table__modernSideTable/Table__modernSideTable-Finish1.jpg",
+      "/images/Table__modernSideTable/Table__modernSideTable-Finish2.jpg"
+    ],
+    "description": "Make a simple mid century styled piece as a side table for your bedroom, or an end table for your living room! The simple design is an easy assembly and is great for a small weekend project!",
+    "category": "Table",
+    "materials": [
+      "White Birch , 1/2” Thick , 36”",
+      "40 1” Kreg Screws",
+      "1 14” Drawer Slides",
+      "Drawer Pull",
+      "4 5-1/2” Round Taper Furniture Legs",
+      "4 Angle Plate Hardware"
+    ],
+    "toolsRequired": ["Tape Measure", "Square", "Sander", "Drill", "Hammer"],
+    "cutList": [
+      "2 Side Boards , 1/2”X16”X17”",
+      "2 Shelves (Middle & Bottom) , 1/2”X16”X19”",
+      "1 Top , 1/2”X1”X20”",
+      "1 Backing , 1/4”X17.5”X20”",
+      "1 Drawer Front , 1/2”X6-7/8”X18-7/8”",
+      "1 Drawer Back , 1/2”X5”X18”",
+      "2 Drawer Sides , 1/2”X5”X14”",
+      "1 Drawer Base , 1/2”X14”X17”"
+    ],
+    "reference": "https://learn.kregtool.com/plans/midcentury-modern-side-table/",
+    "steps": [
+      {
+        "id": 1,
+        "stepNumber": "Step 1:",
+        "stepTitle": "Cut Boards to Size",
+        "detail": "Using the provided cut list, cut your white birch wood, and 1/4” backing to size. Sand the edges as smoothly as possible since they will show!",
+        "images": "/images/Table__modernSideTable/Table__modernSideTable-Step1.jpg"
+      },
+      {
+        "id": 2,
+        "stepNumber": "Step 2:",
+        "stepTitle": "Drill Pocket Holes",
+        "detail": "Using a Kreg jig, drill pocket holes for 1” Kreg screws. Drill two pocket holes in the long end of both 17” side boards. Drill two pocket holes in both long ends of the 19” middle shelf and bottom shelf. Be sure the pocket holes are drilled on the back side (the side you don't want seen), except for the middle shelf.",
+        "images": "/images/Table__modernSideTable/Table__modernSideTable-Step2.jpg"
+      },
+      {
+        "id": 3,
+        "stepNumber": "Step 3:",
+        "stepTitle": "Attach Side Boards to Top",
+        "detail": "Screw the 17” side boards into the 20” nightstand top via the pocket holes. Use a carpenter's square to ensure the angles are perfect, and use Kreg clamps to hold the piece together.",
+        "images": "/images/Table__modernSideTable/Table__modernSideTable-Step3.jpg"
+      },
+      {
+        "id": 4,
+        "stepNumber": "Step 4:",
+        "stepTitle": "Add the Middle Shelf",
+        "detail": "Measure and mark a line on each sideboard, 7 inches from the top. That 7” opening will be where your drawer goes. Place your 19” middle board to the line, square it off, clamp, and attach via the pocket holes.",
+        "images": "/images/Table__modernSideTable/Table__modernSideTable-Step4.jpg"
+      },
+      {
+        "id": 5,
+        "stepNumber": "Step 5:",
+        "stepTitle": "Add Bottom Shelf",
+        "detail": "Finally, attach the bottom shelf via pocket holes, this time the pocket holes face outward (this is the bottom of your end table). Set your drawer base aside, it is time to build your drawer!",
+        "images": "/images/Table__modernSideTable/Table__modernSideTable-Step5.jpg"
+      },
+      {
+        "id": 6,
+        "stepNumber": "Step 6:",
+        "stepTitle": "Drawer Pocket Holes",
+        "detail": "Drill holes on the side of the wood that will be the outside pieces. Two holes in the long sides of both 5”x14” drawer sides, and two to three holes in all four sides of the 17”x14” drawer base.",
+        "images": "/images/Table__modernSideTable/Table__modernSideTable-Step6.jpg"
+      },
+      {
+        "id": 7,
+        "stepNumber": "Step 7:",
+        "stepTitle": "Attach Drawer Sides",
+        "detail": "Clamp, and screw three of the four drawer sides (pocket holes facing out). Leave off the 6-7/8”x18-7/8” drawer front until later. Be sure to attach the pieces around the drawer base, this will keep it square and tight around the base.",
+        "images": "/images/Table__modernSideTable/Table__modernSideTable-Step7.jpg"
+      },
+      {
+        "id": 8,
+        "stepNumber": "Step 8:",
+        "stepTitle": "Attach Drawer Base",
+        "detail": "Gently flip the drawer upright, keeping the base intact with the sides. Recess the base by an 1/8 to 1/4 of an inch (this ensures screw heads won't scrape the bottom when pulling the drawer in and out). Attach the base to the three sides via the pocket holes.",
+        "images": "/images/Table__modernSideTable/Table__modernSideTable-Step8.jpg"
+      },
+      {
+        "id": 9,
+        "stepNumber": "Step 9:",
+        "stepTitle": "Attach Drawer Slides & Front",
+        "detail": "Attach drawer slides to the drawer base, and drawer. Now slide your three sided drawer into place. To attach the drawer front, place a band clamp (a thin strap...if not thin enough a thick ribbon will do)around the back of the drawer, through the sides, and wrapped around the drawer front panel. With the drawer closed, adjust the front panel to float in the center of the slight gap (there should be a total of a 1/8” gap on one side), tighten the strap, slowly open the drawer just enough to reveal the pocket holes on either side, and screw into the front panel. Remove the drawer and screw into the front panel via pocket holes on the underside.",
+        "images": "/images/Table__modernSideTable/Table__modernSideTable-Step9.jpg"
+      },
+      {
+        "id": 10,
+        "stepNumber": "Step 10:",
+        "stepTitle": "Attach Feet, Backing, & Pulls",
+        "detail": "This is the time to paint or stain your side table / end table. Or if you prefer the natural wood grain, simply seal it with polyurethane. Add feet of choice, and drawer pulls. Finally, nail on the backing with the wood grain showing forward. Enjoy your gorgeous new side table or end table!!",
+        "images": "/images/Table__modernSideTable/Table__modernSideTable-Step10.jpg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Bench with Built-In Storage",
+    "image": [
+      "/images/Bench__withStorage/Bench__withStorage-Finish1.jpg",
+      "/images/Bench__withStorage/Bench__withStorage-Finish2.jpg",
+      "/images/Bench__withStorage/Bench__withStorage-Finish3.jpg"
+    ],
+    "description": "Whether you need seating in a hallway, a bedroom, or even your living room, this bench makes a beautiful addition. The upholstered cushion is comfortable and allows lots of customization options, and the storage compartment is handy. We made ours from four maple boards and a half sheet of plywood.",
+    "category": "Bench",
+    "materials": [
+      "4 Board , 19mm X 64mm , 2400mm",
+      "1 Plywood , 19mm Thick , Half Sheet",
+      "40 Kreg 32mm Fine-Thread Pocket-Hole Screws",
+      "16 Kreg 32mm Coarse-Thread Pocket-Hole Screws",
+      "14 38mm Flat-Head Wood Screws",
+      "1 7.5m (25-Foot) Roll Maple Veneer Edgebanding",
+      "16 Kreg Maple Pocket-Hole Plugs",
+      "2 Lid Supports",
+      "1 Round Knob",
+      "1 Pair Partial-Wraparound Hinges",
+      "Upholstery Foam",
+      "1 Square Yard Upholstery Fabric"
+    ],
+    "toolsRequired": [
+      "Tape Measure",
+      "Square",
+      "Sander",
+      "Drill",
+      "Stapler",
+      "Scissors"
+    ],
+    "cutList": [
+      "4 Leg , 19 X 64 X 343mm Maple",
+      "4 End Rail , 19 X 64 X 343mm Maple",
+      "2 Upper Rail , 19 X 64 X 898mm Maple",
+      "2 Lower Rail , 19 X 64 X 1022mm Maple",
+      "2 Box Side , 19 X 64 X 419mm Maple",
+      "2 Box Front/Back , 19 X 64 X 457mm Maple",
+      "1 Box Lid , 19mm Ply X 457 X 457mm",
+      "1 Bench Platform , 19mm Ply X 457 X 1194mm",
+      "Cushion Base , 19mm Ply X 457 X 737mm"
+    ],
+    "reference": "https://learn.kregtool.com/plans/bench-with-built-in-storage-metric/",
+    "steps": [
+      {
+        "id": 1,
+        "stepNumber": "Step 1:",
+        "stepTitle": "Cut the Legs",
+        "detail": "Cut four Legs to length from 19x64mm maple boards, as shown in the cutting diagram. Note that the ends of each Leg have parallel 15° angles. Measure carefully, and use a stop block on your miter saw if possible to ensure that all four legs are the exact same length.",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step1.jpeg"
+      },
+      {
+        "id": 2,
+        "stepNumber": "Step 2:",
+        "stepTitle": "Create the End Rails",
+        "detail": "Cut four End Rails to length from 19x64mm maple boards, as shown in the cut diagram. Set your pocket-hole jig for 19mm material, and then drill pocket holes at the locations shown.",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step2.jpeg"
+      },
+      {
+        "id": 3,
+        "stepNumber": "Step 3:",
+        "stepTitle": "Create Upper & Lower Rails",
+        "detail": "Cut the two Upper Rails and two Lower Rails to length with opposing 15° angles on each end, as shown in the cutting diagram. Drill pocket holes where shown. Note that the pocket holes at the ends of these rails should be drilled perpendicular to the angled end of the rail.",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step3.jpeg"
+      },
+      {
+        "id": 4,
+        "stepNumber": "Step 4:",
+        "stepTitle": "Attach the Legs to the Rails",
+        "detail": "On a flat work surface, secure two Legs to one Upper Rail using 32mm fine-thread pocket-hole screws, as shown. Make sure the upper end of each Leg is flush with the top of the Upper Rail. Now set the Lower Rail between the Legs at the location shown and secure it to the Legs with 32mm fine-thread pocket-hole screws. Do the same process for the other set of Legs and Rails. When both Leg assemblies are complete, you’ll want to plug the pocket holes on the Lower Rails, since they’ll be visible on the inside of the bench base. When the glue dries, sand the plugs flush.",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step4.jpeg"
+      },
+      {
+        "id": 5,
+        "stepNumber": "Step 5:",
+        "stepTitle": "Install the End Rails",
+        "detail": "On one Leg assembly, lay out the location of the Upper and Lower End Rails, as shown. Set the Upper End Rail in place, and secure it to the Leg with 32mm fine-thread pocket-hole screws as shown. Repeat this for all four End Rails. Once you have the End Rails secured on one Leg assembly, flip that assembly over onto the second assembly and repeat the previous step. Before moving on, glue and plug the eight pocket holes on the lower End Rails. When the glue dries, sand the plugs flush.",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step5.jpeg"
+      },
+      {
+        "id": 6,
+        "stepNumber": "Step 6:",
+        "stepTitle": "Cut the Plywood Parts",
+        "detail": "From 19mm plywood, cut the Base Platform, the Box Lid and the Cushion Base to size, as shown in the cut diagram. Then you can set the Cushion Base aside for now. To cover the plywood edges of the Bench Platform and the Box Lid, cut strips of veneer edge banding slightly extra-long. Starting with the short ends, iron the edging onto the Bench Platform and the Box Lid. When the glue cools, trim the edging to final length using a utility knife, and to width (to match the thickness of the plywood) using an edging trimmer. Now complete the same procedure for the front and back edges. Gently sand the edges smooth.",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step6.jpeg"
+      },
+      {
+        "id": 7,
+        "stepNumber": "Step 7:",
+        "stepTitle": "Drill Holes in the Bench Platform",
+        "detail": "On the Bench Platform, lay out the locations, as shown, for holes that will be used to secure the box assembly and the cushion. Then drill countersunk 3 mm pilot holes at those locations.",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step7.jpeg"
+      },
+      {
+        "id": 8,
+        "stepNumber": "Step 8:",
+        "stepTitle": "Attach the Base to the Platform",
+        "detail": "With the Bench Platform sitting face-down on a work surface, place the base assembly in position and secure it using 32mm coarse-thread pocket-hole screws. Though you used fine-thread screws for the solid-maple parts, coarse-thread screws are a better choice for attaching to the plywood.",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step8.jpeg"
+      },
+      {
+        "id": 9,
+        "stepNumber": "Step 9:",
+        "stepTitle": "Create the Box Parts",
+        "detail": "Cut two Box Sides, a Box Front, and a Box Back to length from a 19x64mm board, as shown in the cut diagram. Drill Pocket holes in the ends of the Box Sides as shown.",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step9.jpeg"
+      },
+      {
+        "id": 10,
+        "stepNumber": "Step 10:",
+        "stepTitle": "Assemble the Box",
+        "detail": "Attach the Box Sides to the Box Front and Box Back using 32mm fine-thread pocket-hole screws, as shown.",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step10.jpeg"
+      },
+      {
+        "id": 11,
+        "stepNumber": "Step 11:",
+        "stepTitle": "Attach the Box to the Platform",
+        "detail": "Position the bench base assembly on the box assembly, as shown, and support the other end of the base assembly with a spacer—just a scrap of 19x64mm. Align the box with the edges and end of the Bench Platform, and then secure the box using eight 38mm flat-head wood screws.",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step11.jpeg"
+      },
+      {
+        "id": 12,
+        "stepNumber": "Step 12:",
+        "stepTitle": "Attach the Lid",
+        "detail": "Flip the Bench upright again, and then mark the locations of the hinges on the Box Back. Drill pilot holes, and then secure the hinges to the Box with the screws supplied. Align the Box Lid, and mark the locations of the hinges on the Lid. Drill pilot holes in the Lid, and then secure the hinges to the Lid. Close the Lid to check the fit. Make adjustments as needed. If you want to add a knob to the lid, position it where you want it, drill a pilot hole and attach it with the screw provided. Install the Lid supports per manufacturer's instructions. Sand all parts and finish with your favorite finishing product",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step12.jpeg"
+      },
+      {
+        "id": 13,
+        "stepNumber": "Step 13:",
+        "stepTitle": "Create and Attach the Cushion",
+        "detail": "Cut cushion foam to the same size as the Cushion Base. Cut your fabric to 300mm longer and 300mm wider than the Cushion Base. Set the fabric face down on a work surface, center the foam on the fabric, and then set the Cushion Base on the foam. Fold one short end of the fabric over onto the plywood and staple it in place. Pull evenly, and place staples every 25mm or so. Pull the second side tight and secure it the same way. Next, fold one long side over so the corner is square, trim away any extra fabric as needed, and then secure it to the plywood with staples. Repeat this for the final side. Finally, Set the cushion assembly on the bench so the edges are flush, and secure it from underneath with 38mm flat-head wood screws.",
+        "images": "/images/Bench__withStorage/Bench__withStorage-Step13.jpeg"
       }
     ]
   }
