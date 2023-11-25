@@ -1,67 +1,82 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
 .upload {
-  width: 100%;
-  //   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 3rem;
   position: relative;
 
   &-header {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  &-form {
-    display: flex;
-    flex-direction: column;
-  }
-  &-title {
     margin-bottom: 1.5rem;
   }
 
+  &-form {
+    // display: flex;
+    // flex-direction: column;
+    width: calc(100% - 75px);
+    margin: auto;
+  }
+  &-title {
+    margin-bottom: 1rem;
+  }
+
   &-project {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    width: calc(100% - 30px);
+    margin: auto;
 
-    .upload-project__item {
-      width: 80%;
-      margin-bottom: 1rem;
-
-      &:nth-child(odd) {
-        width: 20%;
-        padding-right: 1.5rem;
+    &__item {
+      &-th {
+        width: 25%;
+        text-align: left;
+        padding: 1rem 0;
+        vertical-align: top;
       }
-
-      label {
-        margin-bottom: 0.5rem;
-        font-size: 1.2rem;
-        display: block;
-        width: 100%;
-      }
-
-      input,
-      select {
-        width: 100%;
-        padding: 0.5rem;
-        font-size: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 0.3rem;
+      &-td {
+        padding: 1rem 0;
       }
     }
-
-    .upload__cancel-btn {
-      margin-top: 2rem;
-      background-color: #007bff;
-      color: #fff;
+    &__label {
+      //   width: 20%;
+    }
+    &__input {
+      width: 100%;
+      border: 0;
+      font-size: 12px;
+      background: #f2f2f2;
       padding: 1rem;
-      border: none;
-      cursor: pointer;
-      font-size: 1rem;
-      border-radius: 0.3rem;
-
-      &:hover {
-        background-color: #0056b3;
+      &-dropdown {
+        padding: 0.1rem 5rem 0.1rem 0.5rem;
+        height: 50px;
+      }
+      &-text {
+        height: 50px;
       }
     }
   }
+
+  &__buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+.btn {
+  font-family: "Oswald";
+  font-size: 1rem;
+  letter-spacing: 5px;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid $primary-color;
+  margin: 0 1rem;
+}
+
+.dropdown {
+  display: inline-block;
+}
+span {
+  font-size: 10px;
+  letter-spacing: 0.15rem;
 }

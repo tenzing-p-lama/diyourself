@@ -30,72 +30,170 @@ function UploadPage() {
 
   return (
     <div className="upload">
-      <div className="upload-header">Contribute Your Project</div>
+      <div className="upload-header">
+        <h1>Contribute Your Project</h1>
+      </div>
       <form className="upload-form" onSubmit={handleFormSubmit}>
-        <h1 className="upload-title">Project Form</h1>
-        <section className="upload-project">
-          <div className="upload-project__category">
-            <label htmlFor="category">
-              <h3>Category</h3>
-            </label>
-            <select name="category" id="category">
-              {categories.map((category, index) => (
-                <option
-                  key={index}
-                  value={category}
-                  placeholder="Please select"
+        <h2 className="upload-title">Project Details</h2>
+
+        <table className="upload-project">
+          <tbody>
+            <tr className="upload-project__item">
+              <th className="upload-project__item-th">
+                <label
+                  htmlFor="category"
+                  className="upload-project__label category"
                 >
-                  {category}
-                </option>
-              ))}
-            </select>
-          </div>
+                  <h3>Category</h3>
+                  <span>category of your project</span>
+                </label>
+              </th>
 
-          <div className="upload-project__item">
-            <label htmlFor="title">
-              <h3 className="upload-project__title">Title</h3>
-            </label>
-            <input type="text" name="title" id="title" required />
-          </div>
+              <td className="upload-project__item-td">
+                <div className="dropdown">
+                  <select
+                    name="category"
+                    id="category"
+                    className="upload-project__input upload-project__input-dropdown"
+                  >
+                    {categories.map((category, index) => (
+                      <option
+                        key={index}
+                        value={category}
+                        placeholder="Please select"
+                      >
+                        {category}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </td>
+            </tr>
 
-          <div className="upload-project__item">
-            <label htmlFor="description">
-              <h3 className="upload-project__description">Description</h3>
-            </label>
-            <input type="text" name="description" id="description" required />
-          </div>
+            <tr className="upload-project__item">
+              <th className="upload-project__item-th">
+                <label htmlFor="title" className="upload-project__label">
+                  <h3>Title</h3>
+                  <span>project title</span>
+                </label>
+              </th>
 
-          <div className="upload-project__item">
-            <label htmlFor="materials">
-              <h3 className="upload-project__materials">Materials Used</h3>
-            </label>
-            <input type="text" name="materials" id="materials" required />
-          </div>
+              <td className="upload-project__item-td">
+                <input
+                  type="text"
+                  name="title"
+                  id="title"
+                  placeholder="Please enter your project title"
+                  className="upload-project__input upload-project__input-text"
+                  required
+                />
+              </td>
+            </tr>
 
-          <div className="upload-project__item">
-            <label htmlFor="tools">
-              <h3 className="upload-project__tools">Tools Required</h3>
-            </label>
-            <input type="text" name="tools" id="tools" required />
-          </div>
+            <tr className="upload-project__item">
+              <th className="upload-project__item-th">
+                <label htmlFor="description" className="upload-project__label">
+                  <h3>Description</h3>
+                  <span>project description</span>
+                </label>
+              </th>
 
-          <div className="upload-project__item">
-            <label htmlFor="cut-list">
-              <h3 className="upload-project__cutlist">Cut List</h3>
-            </label>
-            <input type="text" name="cut-list" id="cut-list" required />
-          </div>
+              <td className="upload-project__item-td">
+                <textarea
+                  name="description"
+                  id="description"
+                  cols="30"
+                  rows="10"
+                  placeholder="Please enter a short project description"
+                  className="upload-project__input"
+                  required
+                />
+              </td>
+            </tr>
 
-          <div className="upload-project__item">
-            <label>
-              <h3 className="upload-project__image">Upload Finished Photo</h3>
-            </label>
-          </div>
-        </section>
+            <tr className="upload-project__item">
+              <th className="upload-project__item-th">
+                <label htmlFor="materials" className="upload-project__label">
+                  <h3>Materials</h3>
+                  <span>materials used for project</span>
+                </label>
+              </th>
 
-        <div className="upload__cancel-btn">
-          <input className="upload__cancel" type="button" value="CANCEL" />
-        </div>
+              <td className="upload-project__item-td">
+                <textarea
+                  name="materials"
+                  id="materials"
+                  cols="30"
+                  rows="10"
+                  placeholder="Please list the materials used for your project"
+                  className="upload-project__input"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr className="upload-project__item">
+              <th className="upload-project__item-th">
+                <label htmlFor="tools" className="upload-project__label">
+                  <h3>Tools</h3>
+                  <span>tools required for project</span>
+                </label>
+              </th>
+
+              <td className="upload-project__item-td">
+                <textarea
+                  name="tools"
+                  id="tools"
+                  cols="30"
+                  rows="10"
+                  placeholder="Please list the tools required for your project"
+                  className="upload-project__input"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr className="upload-project__item">
+              <th className="upload-project__item-th">
+                <label htmlFor="cut-list" className="upload-project__label">
+                  <h3>Cut List</h3>
+                  <span>cut list required for project</span>
+                </label>
+              </th>
+
+              <td className="upload-project__item-td">
+                <textarea
+                  name="cut-list"
+                  id="cut-list"
+                  cols="30"
+                  rows="10"
+                  placeholder="Please list the cut list for your project"
+                  className="upload-project__input"
+                  required
+                />
+              </td>
+            </tr>
+
+            <tr className="upload-project__item">
+              <th className="upload-project__item-th">
+                <label className="upload-project__label">
+                  <h3>Photos</h3>
+                  <span>upload photos of finished projects</span>
+                </label>
+              </th>
+
+              <td>
+                <div className="upload__buttons">
+                  <input className="btn" type="submit" value="PUBLISH" />
+
+                  <Link to="/projects">
+                    <input className="btn" type="button" value="CANCEL" />
+                  </Link>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </form>
     </div>
   );
