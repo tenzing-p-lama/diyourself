@@ -22,6 +22,12 @@ const ProjectsPage = () => {
       <div className="projects-container">
         <ul className="projects-ul">
           {projectsList.map((project) => {
+            // Check if project.image is an array and has at least one element
+            const imageSrc =
+              Array.isArray(project.image) && project.image.length > 0
+                ? project.image[0]
+                : "/default-image.jpg";
+
             return (
               <li key={project.id} className="projects-item">
                 <Link to={`/projects/${project.id}`}>
@@ -32,7 +38,7 @@ const ProjectsPage = () => {
 
                   <img
                     className="projects-item__image"
-                    src={project.image[0]}
+                    src={imageSrc}
                     alt={project.title}
                   />
                 </Link>
