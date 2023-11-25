@@ -28,50 +28,62 @@ function ProjectDetailsPage() {
       {projectDetails && (
         <div className="plans">
           <section className="plans-info">
-            <h1 className="plans-info__desc">{projectDetails.title}</h1>
+            <div className="plans-info__prep1">
+              <div className="plans-info__prep1-block">
+                <h4 className="plans-info__desc">{projectDetails.category}</h4>
 
-            <ImageGallery
-              images={projectDetails.image}
-              alt={projectDetails.title}
-            />
+                <h1 className="plans-info__desc">{projectDetails.title}</h1>
 
-            <h3 className="plans-info__desc">{projectDetails.category}</h3>
+                <span className="plans-info__desc">
+                  {projectDetails.description}
+                </span>
+              </div>
 
-            <h3 className="plans-info__desc">{projectDetails.description}</h3>
+              <ImageGallery
+                images={projectDetails.image}
+                alt={projectDetails.title}
+              />
+            </div>
 
-            <div className="plans-info__prep">
-              <ul className="plans-info__list">
-                <h5>Materials:</h5>
+            <div className="plans-info__prep2">
+              <li className="plans-info__list">
+                <p>Materials:</p>
                 {projectDetails.materials && (
-                  <ul>
+                  <ul className="plans-info__list-name">
                     {projectDetails.materials.map((material, index) => (
-                      <li key={index}>{material}</li>
+                      <li key={index} className="plans-info__list-req">
+                        {material}
+                      </li>
                     ))}
                   </ul>
                 )}
-              </ul>
+              </li>
 
-              <ul className="plans-info__list">
-                <h5>Tools Required:</h5>
+              <li className="plans-info__list">
+                <p>Tools Required:</p>
                 {projectDetails.toolsRequired && (
-                  <ul>
+                  <ul className="plans-info__list-name">
                     {projectDetails.toolsRequired.map((tool, index) => (
-                      <li key={index}>{tool}</li>
+                      <li key={index} className="plans-info__list-req">
+                        {tool}
+                      </li>
                     ))}
                   </ul>
                 )}
-              </ul>
+              </li>
 
-              <ul className="plans-info__list">
-                <h5>Cut List:</h5>
+              <li className="plans-info__list">
+                <p>Cut List:</p>
                 {projectDetails.cutList && (
-                  <ul>
+                  <ul className="plans-info__list-name">
                     {projectDetails.cutList.map((cutlist, index) => (
-                      <li key={index}>{cutlist}</li>
+                      <li key={index} className="plans-info__list-req">
+                        {cutlist}
+                      </li>
                     ))}
                   </ul>
                 )}
-              </ul>
+              </li>
             </div>
           </section>
 
