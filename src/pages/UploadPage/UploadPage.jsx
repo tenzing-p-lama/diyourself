@@ -3,29 +3,35 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 
+import upload from "../../assets/images/upload.jpg";
+import stepimg from "../../assets/images/planning.jpg";
+
 function UploadPage() {
   const navigate = useNavigate();
+
   // steps
   const [steps, setSteps] = useState([
     {
-      id: "",
+      id: "1",
       stepNumber: "",
       stepTitle: "",
       detail: "",
       images: "",
     },
   ]);
+  const [idCounter, setIdCounter] = useState(2);
   const handleAddStep = () => {
     setSteps((prevSteps) => [
       ...prevSteps,
       {
-        id: "",
+        id: idCounter.toString(),
         stepNumber: "",
         stepTitle: "",
         detail: "",
         images: "",
       },
     ]);
+    setIdCounter((prevCounter) => prevCounter + 1);
   };
   const handleStepChange = (index, field, value) => {
     setSteps((prevSteps) => {
@@ -37,10 +43,16 @@ function UploadPage() {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+
+    const updatedSteps = steps.map((step) => ({
+      ...step,
+      stepNumber: `Step ${step.stepNumber}:`,
+    }));
+
     try {
       const response = await axios.post(`http://localhost:5050/projects`, {
         title: event.target.title.value,
-        image: ["./upload.jpg"],
+        image: ["/upload.jpg"],
         description: event.target.description.value,
         category: event.target.category.value,
         materials: event.target.materials.value
@@ -52,7 +64,7 @@ function UploadPage() {
         cutList: event.target.cutlist.value
           .split(",")
           .map((item) => item.trim()),
-        steps: steps.slice(0), ////
+        steps: updatedSteps.length > 0 ? updatedSteps.slice(0) : steps.slice(0),
       });
 
       navigate("/projects");
@@ -68,6 +80,7 @@ function UploadPage() {
       <div className="upload-header">
         <h1>Contribute Your Project</h1>
       </div>
+
       <form className="upload-form" onSubmit={handleFormSubmit}>
         <h2 className="upload-title">Project Details</h2>
 
@@ -217,18 +230,16 @@ function UploadPage() {
                 </label>
               </th>
 
-              <td>
-                <div className="upload__buttons">
-                  <input className="btn" type="submit" value="PUBLISH" />
-
-                  <Link to="/projects">
-                    <input className="btn" type="button" value="CANCEL" />
-                  </Link>
-                </div>
+              <td className="upload-project__item-td">
+                <img
+                  className="upload-project__img"
+                  src={upload}
+                  alt="project"
+                />
               </td>
             </tr>
 
-            <tr className="upload-project__item">
+            <tr className="upload-project__item steps">
               <th className="upload-project__item-th">
                 <label htmlFor="steps" className="upload-project__label">
                   <h3>Steps</h3>
@@ -238,50 +249,92 @@ function UploadPage() {
 
               <td className="upload-project__item-td">
                 {steps.map((step, index) => (
-                  <div key={index}>
-                    <label htmlFor={`stepNumber${index}`}>Step Number:</label>
-                    <input
-                      type="text"
-                      id={`stepNumber${index}`}
-                      value={step.stepNumber}
-                      onChange={(e) =>
-                        handleStepChange(index, "stepNumber", e.target.value)
-                      }
-                    />
+                  <div key={index} className="upload-project__step">
+                    <section className="upload-project__step-list">
+                      <label
+                        htmlFor={`stepNumber${index}`}
+                        className="upload-project__step-item"
+                      >
+                        <h4>Step Number:</h4>
+                      </label>
+                      <input
+                        type="text"
+                        id={`stepNumber${index}`}
+                        value={step.stepNumber}
+                        placeholder="Please enter the step number"
+                        className="upload-project__input"
+                        onChange={(e) =>
+                          handleStepChange(index, "stepNumber", e.target.value)
+                        }
+                      />
+                    </section>
 
-                    <label htmlFor={`stepTitle${index}`}>Step Title:</label>
-                    <input
-                      type="text"
-                      id={`stepTitle${index}`}
-                      value={step.stepTitle}
-                      onChange={(e) =>
-                        handleStepChange(index, "stepTitle", e.target.value)
-                      }
-                    />
+                    <section className="upload-project__step-list">
+                      <label
+                        htmlFor={`stepTitle${index}`}
+                        className="upload-project__step-item"
+                      >
+                        <h4>Step Title:</h4>
+                      </label>
+                      <input
+                        type="text"
+                        id={`stepTitle${index}`}
+                        value={step.stepTitle}
+                        placeholder="Please enter a title for each step"
+                        className="upload-project__input"
+                        onChange={(e) =>
+                          handleStepChange(index, "stepTitle", e.target.value)
+                        }
+                      />
+                    </section>
 
-                    <label htmlFor={`detail${index}`}>Detail:</label>
-                    <textarea
-                      id={`detail${index}`}
-                      value={step.detail}
-                      onChange={(e) =>
-                        handleStepChange(index, "detail", e.target.value)
-                      }
-                    />
+                    <section className="upload-project__step-list">
+                      <label
+                        htmlFor={`detail${index}`}
+                        className="upload-project__step-item"
+                      >
+                        <h4>Detail:</h4>
+                      </label>
+                      <textarea
+                        id={`detail${index}`}
+                        value={step.detail}
+                        placeholder="Please enter the details to follow for each step"
+                        className="upload-project__input"
+                        onChange={(e) =>
+                          handleStepChange(index, "detail", e.target.value)
+                        }
+                      />
+                    </section>
 
-                    <label htmlFor={`images${index}`}>Images:</label>
-                    <input
-                      type="text"
-                      id={`images${index}`}
-                      value={step.images}
-                      onChange={(e) =>
-                        handleStepChange(index, "images", e.target.value)
-                      }
-                    />
+                    <section className="upload-project__step-list">
+                      <label
+                        htmlFor={`images${index}`}
+                        className="upload-project__step-item"
+                      >
+                        <h4>Photo:</h4>
+                      </label>
+                      <img
+                        src={stepimg}
+                        alt="step plan"
+                        className="upload-project__step-img"
+                        onChange={(e) =>
+                          handleStepChange(index, "images", e.target.value)
+                        }
+                      />
+                    </section>
                   </div>
                 ))}
                 <button type="button" onClick={handleAddStep}>
                   Add Step
                 </button>
+
+                <div className="upload__buttons">
+                  <input className="btn" type="submit" value="PUBLISH" />
+
+                  <Link to="/projects">
+                    <input className="btn" type="button" value="CANCEL" />
+                  </Link>
+                </div>
               </td>
             </tr>
           </tbody>

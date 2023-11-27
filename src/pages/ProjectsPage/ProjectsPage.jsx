@@ -5,7 +5,7 @@ import axios from "axios";
 import "./ProjectsPage.scss";
 
 const ProjectsPage = () => {
-  // const params = useParams();
+  const params = useParams();
 
   const [projectsList, setProjects] = useState([]);
 
@@ -22,7 +22,6 @@ const ProjectsPage = () => {
       <div className="projects-container">
         <ul className="projects-ul">
           {projectsList.map((project) => {
-            // Check if project.image is an array and has at least one element
             const imageSrc =
               Array.isArray(project.image) && project.image.length > 0
                 ? project.image[0]

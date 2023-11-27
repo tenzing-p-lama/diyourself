@@ -25,13 +25,24 @@
 
     &__item {
       &-th {
-        width: 25%;
+        width: 100%;
         text-align: left;
         padding: 1rem 0;
         vertical-align: top;
+        @include tablet {
+          width: 25%;
+        }
       }
       &-td {
         padding: 1rem 0;
+      }
+    }
+
+    &__label {
+      display: flex;
+      gap: 1rem;
+      @include tablet {
+        display: block;
       }
     }
 
@@ -48,6 +59,25 @@
       &-text {
         height: 50px;
       }
+    }
+
+    &__step {
+      border-bottom: 1px solid black;
+      margin-bottom: 2rem;
+      &-list {
+        display: flex;
+        padding-bottom: 1rem;
+      }
+      &-item {
+        width: 30%;
+      }
+      &-img {
+        width: 70%;
+      }
+    }
+
+    &__img {
+      width: 100%;
     }
   }
 
@@ -75,4 +105,16 @@
 span {
   font-size: 10px;
   letter-spacing: 0.15rem;
+}
+// .steps {
+//   border-top: 1px solid black;
+// }
+
+td,
+th {
+  display: block;
+  width: 100%;
+  @include tablet {
+    display: table-cell;
+  }
 }
