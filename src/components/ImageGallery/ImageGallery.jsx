@@ -19,7 +19,8 @@ const ImageGallery = ({ images, title }) => {
       </div>
 
       <div className="thumbnail-container">
-        {images.map((image, index) => (
+        {(Array.isArray(images) ? images : [images]).map((image, index) => (
+          // {images.map((image, index) => (
           <img
             key={index}
             src={image}
