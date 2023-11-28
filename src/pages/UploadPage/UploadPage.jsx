@@ -13,7 +13,7 @@ function UploadPage() {
   const [steps, setSteps] = useState([
     {
       id: "1",
-      stepNumber: "",
+      stepNumber: "1",
       stepTitle: "",
       detail: "",
       images: "/images/upload.jpg",
@@ -25,7 +25,7 @@ function UploadPage() {
       ...prevSteps,
       {
         id: idCounter.toString(),
-        stepNumber: "",
+        stepNumber: idCounter.toString(),
         stepTitle: "",
         detail: "",
         images: "/images/upload.jpg",
@@ -256,7 +256,7 @@ function UploadPage() {
                       >
                         <h4>Step Number:</h4>
                       </label>
-                      <input
+                      {/* <input
                         type="text"
                         id={`stepNumber${index}`}
                         value={step.stepNumber}
@@ -265,7 +265,17 @@ function UploadPage() {
                         onChange={(e) =>
                           handleStepChange(index, "stepNumber", e.target.value)
                         }
-                      />
+                      /> */}
+                      <h4
+                        id={`stepNumber${index}`}
+                        className="upload-project__input"
+                        value={step.stepNumber}
+                        onChange={(e) =>
+                          handleStepChange(index, "stepNumber", e.target.value)
+                        }
+                      >
+                        {step.stepNumber}
+                      </h4>
                     </section>
 
                     <section className="upload-project__step-list">

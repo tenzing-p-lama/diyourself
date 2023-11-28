@@ -6,6 +6,8 @@
   margin: 0 auto;
   padding: 2rem 3rem;
   position: relative;
+  overflow-y: auto;
+  height: 90vh;
 
   &-header {
     margin-bottom: 1.5rem;
