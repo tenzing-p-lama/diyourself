@@ -64,9 +64,13 @@
     &__step {
       border-bottom: 1px solid black;
       margin-bottom: 2rem;
+      padding-bottom: 1rem;
+
       &-list {
-        display: flex;
         padding-bottom: 1rem;
+        @include tablet {
+          display: flex;
+        }
       }
       &-item {
         width: 30%;
@@ -87,23 +91,12 @@
     justify-content: center;
   }
 }
-.btn {
-  font-family: "Oswald";
-  font-size: 1rem;
-  letter-spacing: 5px;
-  cursor: pointer;
-  padding: 10px;
-  border: none;
-  background: none;
-  border-bottom: 1px solid $primary-color;
-  margin: 0 1rem;
-}
 
 .dropdown {
   display: inline-block;
 }
 span {
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.15rem;
 }
 // .steps {

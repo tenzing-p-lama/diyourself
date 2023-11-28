@@ -15,13 +15,16 @@ User could be anyone from a veteran woodworker to somebody who just decided to t
 
 ### Features
 
-Features include having access to a variety of project plans, i.e. coffee tables, dressers, chairs, bookshelves, plant stands/shelves, dining/study tables, etc. Users are also able to contribute their own project plans that others could find helpful.
+Features include having access to a variety of project plans, i.e. coffee tables, dressers, chairs, bookshelves, plant stands/shelves, dining/study tables, etc.
+Users are also able to contribute their own project plans that others could find helpful.
 
 ## Implementation
 
 ### Tech Stack
 
-json backend
+**Client:** React, SCSS
+
+**Server:** Node, Express
 
 ### APIs
 

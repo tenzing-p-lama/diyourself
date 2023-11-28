@@ -20,7 +20,6 @@ const ImageGallery = ({ images, title }) => {
 
       <div className="thumbnail-container">
         {(Array.isArray(images) ? images : [images]).map((image, index) => (
-          // {images.map((image, index) => (
           <img
             key={index}
             src={image}

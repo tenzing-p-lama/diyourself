@@ -16,7 +16,7 @@ function UploadPage() {
       stepNumber: "",
       stepTitle: "",
       detail: "",
-      images: "",
+      images: "/images/upload.jpg",
     },
   ]);
   const [idCounter, setIdCounter] = useState(2);
@@ -28,7 +28,7 @@ function UploadPage() {
         stepNumber: "",
         stepTitle: "",
         detail: "",
-        images: "",
+        images: "/images/upload.jpg",
       },
     ]);
     setIdCounter((prevCounter) => prevCounter + 1);
@@ -52,7 +52,7 @@ function UploadPage() {
     try {
       const response = await axios.post(`http://localhost:5050/projects`, {
         title: event.target.title.value,
-        image: ["/upload.jpg"],
+        image: ["/images/upload.jpg"],
         description: event.target.description.value,
         category: event.target.category.value,
         materials: event.target.materials.value
@@ -73,7 +73,7 @@ function UploadPage() {
     }
   };
 
-  const categories = ["Table", "Dresser", "Electronics", "Health", "Gear"];
+  const categories = ["Table", "Dresser", "Vanity", "Cabinet", "Bench"];
 
   return (
     <div className="upload">
@@ -104,12 +104,11 @@ function UploadPage() {
                     id="category"
                     className="upload-project__input upload-project__input-dropdown"
                   >
+                    <option value="" disabled selected>
+                      --
+                    </option>
                     {categories.map((category, index) => (
-                      <option
-                        key={index}
-                        value={category}
-                        placeholder="Please select"
-                      >
+                      <option key={index} value={category}>
                         {category}
                       </option>
                     ))}
@@ -234,7 +233,7 @@ function UploadPage() {
                 <img
                   className="upload-project__img"
                   src={upload}
-                  alt="project"
+                  alt="project-complete"
                 />
               </td>
             </tr>
@@ -322,11 +321,16 @@ function UploadPage() {
                         }
                       />
                     </section>
+
+                    <button
+                      type="button"
+                      className="btn-two"
+                      onClick={handleAddStep}
+                    >
+                      <h4>ADD STEP</h4>
+                    </button>
                   </div>
                 ))}
-                <button type="button" onClick={handleAddStep}>
-                  Add Step
-                </button>
 
                 <div className="upload__buttons">
                   <input className="btn" type="submit" value="PUBLISH" />

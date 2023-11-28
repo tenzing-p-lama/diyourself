@@ -17,8 +17,9 @@
       &-block {
         padding-bottom: 2rem;
         @include tablet {
-          width: 30%;
+          width: 38%;
           padding-right: 2rem;
+          padding-left: 2rem;
           text-align: end;
         }
       }
