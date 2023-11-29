@@ -6,7 +6,7 @@ function HomePage() {
     <div className="home-bg">
       <div className="home-content">
         <section>
-          <h1 className="home-logo">DIY</h1>
+          {/* <h1 className="home-logo">DIY</h1> */}
           <p className="home-logo__tagline">Do It Yourself</p>
         </section>
 

@@ -19,10 +19,6 @@ const NavBar = () => {
         </NavLink>
 
         <section className="nav-menu">
-          <div className="hamburgerMenu" onClick={toggleHamburger}>
-            <Hamburger isOpen={hamburger} />
-          </div>
-
           <ul className={hamburger ? "nav-links" : "nav-links__close"}>
             <Link
               to="/projects"
@@ -33,7 +29,7 @@ const NavBar = () => {
               Projects
             </Link>
 
-            <li className="nav-link">search bar</li>
+            {/* <li className="nav-link">search bar</li> */}
 
             <Link
               to="/upload"
@@ -44,6 +40,10 @@ const NavBar = () => {
               Add Project
             </Link>
           </ul>
+
+          <div className="hamburgerMenu" onClick={toggleHamburger}>
+            <Hamburger isOpen={hamburger} />
+          </div>
         </section>
       </nav>
     </div>

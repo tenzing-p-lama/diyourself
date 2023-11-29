@@ -25,7 +25,7 @@ const ProjectsPage = () => {
   }, []);
 
   ////
-
+  /*
   useEffect(() => {
     const handleScroll = () => {
       const container = containerRef.current;
@@ -54,11 +54,10 @@ const ProjectsPage = () => {
       container.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+*/
   ////
 
   return (
-    /*
     <main className="projects">
       <div className="projects-container">
         <div
@@ -106,7 +105,11 @@ const ProjectsPage = () => {
         </div>
       </div>
     </main>
-    */
+
+    //
+
+    //
+    /*
     <main
       style={{
         height: "90vh",
@@ -167,6 +170,8 @@ const ProjectsPage = () => {
         </div>
       </div>
     </main>
+    */
+    //
   );
 };
 

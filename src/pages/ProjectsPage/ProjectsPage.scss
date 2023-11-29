@@ -2,7 +2,6 @@
 @use "../../styles/partials/typography" as *;
 
 .projects {
-  /*
   @include tablet {
     height: 90vh;
     overflow-x: scroll;
@@ -31,10 +30,8 @@
     transition: transform 0.5s ease-in-out;
     @include tablet {
       flex-wrap: nowrap;
-      flex: 1,
     }
   }
-*/
 
   &-item {
     position: relative;
