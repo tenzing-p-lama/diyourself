@@ -1,0 +1,115 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/variables" as *;
+
+.upload {
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  position: relative;
+  overflow-y: auto;
+  height: 90vh;
+
+  &-header {
+    margin-bottom: 1.5rem;
+  }
+
+  &-form {
+    width: calc(100% - 75px);
+    margin: auto;
+  }
+  &-title {
+    margin-bottom: 1rem;
+  }
+
+  &-project {
+    width: calc(100% - 30px);
+    margin: auto;
+
+    &__item {
+      &-th {
+        width: 100%;
+        text-align: left;
+        padding: 1rem 0;
+        vertical-align: top;
+        @include tablet {
+          width: 25%;
+        }
+      }
+      &-td {
+        padding: 1rem 0;
+      }
+    }
+
+    &__label {
+      display: flex;
+      gap: 1rem;
+      @include tablet {
+        display: block;
+      }
+    }
+
+    &__input {
+      width: 100%;
+      border: 0;
+      font-size: 12px;
+      background: #f2f2f2;
+      padding: 1rem;
+      &-dropdown {
+        padding: 0.1rem 5rem 0.1rem 0.5rem;
+        height: 50px;
+      }
+      &-text {
+        height: 50px;
+      }
+    }
+
+    &__step {
+      border-bottom: 1px solid black;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+
+      &-list {
+        padding-bottom: 1rem;
+        @include tablet {
+          display: flex;
+        }
+      }
+      &-item {
+        width: 30%;
+      }
+      &-img {
+        width: 70%;
+      }
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  &__buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.dropdown {
+  display: inline-block;
+}
+span {
+  font-size: 11px;
+  letter-spacing: 0.15rem;
+}
+// .steps {
+//   border-top: 1px solid black;
+// }
+
+td,
+th {
+  display: block;
+  width: 100%;
+  @include tablet {
+    display: table-cell;
+  }
+}

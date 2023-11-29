@@ -1,6 +1,9 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 .home {
   &-bg {
-    background-image: url(../../assets/images/background/tiana-borcherding-unsplash.jpg);
+    background-image: url(../../assets/images/tiana-borcherding-unsplash.jpg);
     background-repeat: no-repeat;
     height: 100vh;
     background-position: center;
@@ -10,8 +13,27 @@
   &-content {
     position: absolute;
     left: 0;
-    padding: 5rem;
+    padding: 3rem;
     margin-bottom: 5rem;
     bottom: 0;
+
+    width: 100%;
+  }
+  &-logo {
+    text-transform: lowercase;
+    font-size: 6rem;
+    &__tagline {
+      // color: $secondary-color;
+      margin-bottom: 1rem;
+      font-size: 32px;
+      font-family: "Oswald";
+      @include tablet {
+        font-size: 48px;
+        margin-bottom: 2rem;
+      }
+      @include desktop {
+        font-size: 60px;
+      }
+    }
   }
 }

@@ -1,0 +1,49 @@
+@use "./variables" as *;
+
+@font-face {
+  font-family: "Quattrocento", sans-serif;
+  src: url("../../assets/fonts/Quattrocento/Quattrocento-Regular.ttf")
+    format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../../assets/fonts/Oswald/Oswald-Bold.ttf") format("ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../../assets/fonts/Oswald/Oswald-Medium.ttf") format("ttf");
+  font-weight: 500;
+}
+
+body,
+textarea,
+input,
+select {
+  font-family: "Quattrocento", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Oswald";
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.6rem;
+}

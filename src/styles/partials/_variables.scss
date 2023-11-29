@@ -1,0 +1,25 @@
+$primary-color: #915302;
+
+.btn {
+  font-family: "Oswald";
+  font-size: 1rem;
+  letter-spacing: 5px;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid $primary-color;
+  margin: 0 1rem;
+  &-two {
+    height: 3rem;
+    padding: 0 1rem;
+    border: 1px solid black;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      background-color: #fff;
+      color: black;
+    }
+  }
+}
