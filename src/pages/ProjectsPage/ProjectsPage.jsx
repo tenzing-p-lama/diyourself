@@ -1,19 +1,20 @@
-//
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import LocomotiveScroll from "locomotive-scroll";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import LocomotiveScroll from "locomotive-scroll";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { useSpring, animated } from "react-spring";
 
 import "./ProjectsPage.scss";
 
 const ProjectsPage = () => {
   const [projectsList, setProjects] = useState([]);
-  // const containerRef = useRef(null);
-  //
-  const projectItemRefs = useRef([]);
-  //
+  const containerRef = useRef(null);
+
+  const midpoint = Math.ceil(projectsList.length / 2);
+  const firstHalf = projectsList.slice(0, midpoint);
+  const secondHalf = projectsList.slice(midpoint);
 
   useEffect(() => {
     async function fetchProjects() {
@@ -21,83 +22,53 @@ const ProjectsPage = () => {
       setProjects(response.data);
     }
     fetchProjects();
-
-    //
-    /*
-    // Initialize Locomotive Scroll after the projects have loaded
-    const scroll = new LocomotiveScroll({
-      el: containerRef.current,
-      smooth: true,
-    });
-    // Clean up Locomotive Scroll on component unmount
-    return () => {
-      scroll.destroy();
-    };
-    //
-*/
-    //
   }, []);
 
-  //
-  //gsap
-  /*
+  ////
+
   useEffect(() => {
-    // Function to handle animations
-    const animateProjects = (projectItem, i) => {
-      gsap.to(projectItem, {
-        opacity: 1,
-        repeat: 1,
-        yoyo: true,
-        ease: "none",
-        scrollTrigger: {
-          trigger: projectItem,
-          start: "center bottom",
-          end: "center top",
-          markers: true,
-          scrub: true,
-        },
-      });
+    const handleScroll = () => {
+      const container = containerRef.current;
+      const maxScroll = container.scrollHeight - container.clientHeight;
+      const currentScroll = container.scrollTop;
+      const bottom = 100;
+
+      if (currentScroll + bottom >= maxScroll) {
+        // const uls = container.querySelectorAll("ul");
+
+        // uls.forEach((ul) => {
+        //   const newUl = ul.cloneNode(true);
+        //   ul.parentNode.appendChild(newUl);
+        // });
+        //
+
+        //
+        container.scrollTop = 0;
+        //
+      }
     };
 
-    // Iterate through each project item
-    projectItemRefs.current.forEach((projectItem, i) => {
-      animateProjects(projectItem, i);
-    });
-
-    // ScrollTrigger for entire page
-    ScrollTrigger.create({
-      start: 0,
-      end: "max",
-      onLeave: (self) => {
-        self.scroll(1);
-        ScrollTrigger.update();
-      },
-      onLeaveBack: (self) => {
-        self.scroll(ScrollTrigger.maxScroll(window) - 1);
-        ScrollTrigger.update();
-      },
-    });
-    // Cleanup function
+    const container = containerRef.current;
+    container.addEventListener("scroll", handleScroll);
     return () => {
-      // Ensure to kill ScrollTriggers when component unmounts
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      container.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  */
-  //
-  //
 
-  const midpoint = Math.ceil(projectsList.length / 2);
-  const firstHalf = projectsList.slice(0, midpoint);
-  const secondHalf = projectsList.slice(midpoint);
+  ////
 
   return (
+    /*
     <main className="projects">
       <div className="projects-container">
-        <div className="projects-container__UL">
-          <ul className="projects-ul">
+        <div
+          id="container"
+          ref={containerRef}
+          className="projects-container__UL"
+        >
+          <ul className="projects-ul" style={{ overflowY: "auto" }}>
             {firstHalf.map((project) => (
-              <li key={project.id} className="projects-item">
+              <div key={project.id} className="projects-item">
                 <Link to={`/projects/${project.id}`}>
                   <div className="projects-item__overlay">
                     <h1>{project.title}</h1>
@@ -110,13 +81,13 @@ const ProjectsPage = () => {
                     alt={project.title}
                   />
                 </Link>
-              </li>
+              </div>
             ))}
           </ul>
 
-          <ul className="projects-ul">
+          <ul className="projects-ul" style={{ overflowY: "auto" }}>
             {secondHalf.map((project) => (
-              <li key={project.id} className="projects-item">
+              <div key={project.id} className="projects-item">
                 <Link to={`/projects/${project.id}`}>
                   <div className="projects-item__overlay">
                     <h1>{project.title}</h1>
@@ -129,7 +100,68 @@ const ProjectsPage = () => {
                     alt={project.title}
                   />
                 </Link>
-              </li>
+              </div>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </main>
+    */
+    <main
+      style={{
+        height: "90vh",
+        overflowY: "auto",
+        overflowX: "scroll",
+      }}
+    >
+      <div
+        id="container"
+        ref={containerRef}
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          height: "90vh",
+          overflowY: "auto",
+        }}
+      >
+        <div style={{ flex: "0 0 50%", marginRight: "10px" }}>
+          <ul className="projects-ul" data-current="0">
+            {firstHalf.map((project) => (
+              <div key={project.id} className="projects-item">
+                <Link to={`/projects/${project.id}`}>
+                  <div className="projects-item__overlay">
+                    <h1>{project.title}</h1>
+                    <h4>{project.category}</h4>
+                  </div>
+
+                  <img
+                    className="projects-item__image"
+                    src={project.image[0] || "/upload.jpg"}
+                    alt={project.title}
+                  />
+                </Link>
+              </div>
+            ))}
+          </ul>
+        </div>
+
+        <div style={{ flex: "0 0 50%" }}>
+          <ul className="projects-ul">
+            {secondHalf.map((project) => (
+              <div key={project.id} className="projects-item">
+                <Link to={`/projects/${project.id}`}>
+                  <div className="projects-item__overlay">
+                    <h1>{project.title}</h1>
+                    <h4>{project.category}</h4>
+                  </div>
+
+                  <img
+                    className="projects-item__image"
+                    src={project.image[0] || "/upload.jpg"}
+                    alt={project.title}
+                  />
+                </Link>
+              </div>
             ))}
           </ul>
         </div>

@@ -5,7 +5,11 @@ function HomePage() {
   return (
     <div className="home-bg">
       <div className="home-content">
-        <h1>DIY</h1>
+        <section>
+          <h1 className="home-logo">DIY</h1>
+          <p className="home-logo__tagline">Do It Yourself</p>
+        </section>
+
         <Link to="/projects">
           <button type="button" className="btn-two">
             <h4>Explore</h4>

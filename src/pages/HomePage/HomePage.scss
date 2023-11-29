@@ -16,4 +16,12 @@
     margin-bottom: 5rem;
     bottom: 0;
   }
+  &-logo {
+    text-transform: lowercase;
+    font-size: 6rem;
+    &__tagline {
+      color: $secondary-color;
+      font-family: "Oswald";
+    }
+  }
 }

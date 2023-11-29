@@ -14,8 +14,8 @@ const NavBar = () => {
   return (
     <div className={location.pathname === "/" ? "navbar" : "navbar-top"}>
       <nav className="nav">
-        <NavLink to="/">
-          <h1 className="nav-logo">Logo</h1>
+        <NavLink to="/" className="nav-logo">
+          <h1 className="nav-logo nav-logo__text">diy</h1>
         </NavLink>
 
         <section className="nav-menu">
