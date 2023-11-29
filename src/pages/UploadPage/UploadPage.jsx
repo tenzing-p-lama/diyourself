@@ -78,7 +78,7 @@ function UploadPage() {
   return (
     <div className="upload">
       <div className="upload-header">
-        <h1>Contribute Your Project</h1>
+        <h1>Add Your Project</h1>
       </div>
 
       <form className="upload-form" onSubmit={handleFormSubmit}>
@@ -256,16 +256,6 @@ function UploadPage() {
                       >
                         <h4>Step Number:</h4>
                       </label>
-                      {/* <input
-                        type="text"
-                        id={`stepNumber${index}`}
-                        value={step.stepNumber}
-                        placeholder="Please enter the step number"
-                        className="upload-project__input"
-                        onChange={(e) =>
-                          handleStepChange(index, "stepNumber", e.target.value)
-                        }
-                      /> */}
                       <h4
                         id={`stepNumber${index}`}
                         className="upload-project__input"
