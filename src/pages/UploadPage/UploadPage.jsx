@@ -50,22 +50,26 @@ function UploadPage() {
     }));
 
     try {
-      const response = await axios.post(`http://localhost:5050/projects`, {
-        title: event.target.title.value,
-        image: ["/images/upload.jpg"],
-        description: event.target.description.value,
-        category: event.target.category.value,
-        materials: event.target.materials.value
-          .split(",")
-          .map((item) => item.trim()),
-        toolsRequired: event.target.tools.value
-          .split(",")
-          .map((item) => item.trim()),
-        cutList: event.target.cutlist.value
-          .split(",")
-          .map((item) => item.trim()),
-        steps: updatedSteps.length > 0 ? updatedSteps.slice(0) : steps.slice(0),
-      });
+      const response = await axios.post(
+        `https://diyourself-986a58a2ea07.herokuapp.com/projects`,
+        {
+          title: event.target.title.value,
+          image: ["/images/upload.jpg"],
+          description: event.target.description.value,
+          category: event.target.category.value,
+          materials: event.target.materials.value
+            .split(",")
+            .map((item) => item.trim()),
+          toolsRequired: event.target.tools.value
+            .split(",")
+            .map((item) => item.trim()),
+          cutList: event.target.cutlist.value
+            .split(",")
+            .map((item) => item.trim()),
+          steps:
+            updatedSteps.length > 0 ? updatedSteps.slice(0) : steps.slice(0),
+        }
+      );
 
       navigate("/projects");
     } catch (err) {

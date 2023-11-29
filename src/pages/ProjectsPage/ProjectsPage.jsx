@@ -14,7 +14,9 @@ const ProjectsPage = () => {
 
   useEffect(() => {
     async function fetchProjects() {
-      const response = await axios.get(`http://localhost:5050/projects`);
+      const response = await axios.get(
+        `https://diyourself-986a58a2ea07.herokuapp.com/projects`
+      );
       setProjects(response.data);
     }
     fetchProjects();

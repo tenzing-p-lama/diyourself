@@ -13,7 +13,7 @@ function ProjectDetailsPage() {
     async function fetchProjectDetails() {
       try {
         const response = await axios.get(
-          `http://localhost:5050/projects/${id}`
+          `https://diyourself-986a58a2ea07.herokuapp.com/projects/${id}`
         );
         setProjectDetails(response.data);
       } catch (error) {
