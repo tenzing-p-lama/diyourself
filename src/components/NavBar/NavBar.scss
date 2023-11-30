@@ -21,13 +21,12 @@
     &__text {
       text-transform: lowercase;
       font-size: 1.7rem;
-      color: black;
+      color: $primary-color;
     }
   }
 
   &-menu {
     display: flex;
-    // flex-direction: column;
     align-items: flex-end;
   }
 
@@ -36,9 +35,6 @@
     padding-right: 2rem;
     &__close {
       display: none;
-      // @include tablet {
-      //   display: flex;
-      // }
     }
   }
   &-link {

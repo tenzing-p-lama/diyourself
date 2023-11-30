@@ -70,7 +70,6 @@ function UploadPage() {
             updatedSteps.length > 0 ? updatedSteps.slice(0) : steps.slice(0),
         }
       );
-
       navigate("/projects");
     } catch (err) {
       console.log("Project not uploaded", err);
@@ -78,6 +77,40 @@ function UploadPage() {
   };
 
   const categories = ["Table", "Dresser", "Vanity", "Cabinet", "Bench"];
+  const predefinedValues = {
+    description: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ],
+    tools: [
+      "Hammer",
+      "Screwdriver",
+      "Saw",
+      "Drill",
+      "Sander",
+      "Router",
+      "Tape Measure",
+    ],
+    materials: [
+      "1 Plywood Sheet",
+      "1 Birch Plywood",
+      "1 Oak Plywood",
+      "Nails",
+      "Paint",
+      "Screws",
+      "Stain/Finish",
+    ],
+    cutlist: ["Board 1", "Board 2", "Panel A", "Panel B", "Bracket C"],
+  };
+  const [values, setValues] = useState({
+    description: "",
+    tools: "",
+    materials: "",
+    cutlist: "",
+  });
+  const handleAutoFill = (name) => {
+    const valueText = predefinedValues[name].join(", ");
+    setValues((prevValues) => ({ ...prevValues, [name]: valueText }));
+  };
 
   return (
     <div className="upload">
@@ -157,6 +190,8 @@ function UploadPage() {
                   rows="10"
                   placeholder="Please enter a short project description"
                   className="upload-project__input"
+                  defaultValue={values.description}
+                  onFocus={() => handleAutoFill("description")}
                   required
                 />
               </td>
@@ -178,6 +213,8 @@ function UploadPage() {
                   rows="10"
                   placeholder="Please list the materials used for your project - separated by commas"
                   className="upload-project__input"
+                  defaultValue={values.materials}
+                  onFocus={() => handleAutoFill("materials")}
                   required
                 />
               </td>
@@ -199,6 +236,8 @@ function UploadPage() {
                   rows="10"
                   placeholder="Please list the tools required for your project - separated by commas"
                   className="upload-project__input"
+                  defaultValue={values.tools}
+                  onFocus={() => handleAutoFill("tools")}
                   required
                 />
               </td>
@@ -220,6 +259,8 @@ function UploadPage() {
                   rows="10"
                   placeholder="Please list the cut list for your project - separated by commas"
                   className="upload-project__input"
+                  value={values.cutlist}
+                  onFocus={() => handleAutoFill("cutlist")}
                   required
                 />
               </td>

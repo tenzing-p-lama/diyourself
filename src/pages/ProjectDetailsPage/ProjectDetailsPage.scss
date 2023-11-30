@@ -3,6 +3,10 @@
 @use "../../styles/partials/typography" as *;
 
 .plans {
+  height: 90vh;
+  overflow-x: scroll;
+  overflow-y: auto;
+
   &-info {
     padding: 2rem 3rem;
     display: flex;
@@ -26,18 +30,15 @@
     }
 
     &__prep2 {
+      width: 100%;
       @include tablet {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        // justify-content: space-between;
         padding-left: 2rem;
-        // font-size: 0.8rem;
       }
     }
 
     &__desc {
-      // text-align: center;
       padding-bottom: 2rem;
     }
 
@@ -69,8 +70,6 @@
       &-req {
         margin-left: 1rem;
         margin-right: 0.5rem;
-        display: flex;
-        white-space: nowrap;
         padding: 3px;
         font-family: "Oswald";
         font-size: 1.2rem;
