@@ -1,0 +1,36 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/typography" as *;
+
+.savedprojects {
+  &-ul {
+    position: relative;
+  }
+  &-container {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &-button {
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    &__back {
+      margin-left: 0.5rem;
+      color: black;
+      &:hover {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}
+
+.bookmark {
+  position: absolute;
+  right: 0;
+  &-saved {
+    position: absolute;
+    right: 0;
+  }
+}

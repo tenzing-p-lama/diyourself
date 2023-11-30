@@ -33,7 +33,14 @@ const NavBar = () => {
               Projects
             </Link>
 
-            {/* <li className="nav-link">search bar</li> */}
+            <Link
+              to="/projects/saved"
+              className={`nav-link ${
+                location.pathname === "/project/saved" ? "active" : ""
+              }`}
+            >
+              Saved Projects
+            </Link>
 
             <Link
               to="/upload"

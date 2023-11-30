@@ -10,26 +10,28 @@
   }
 
   &-container {
-    @include tablet {
-      // display: flex;
-      // height: 90vh;
-    }
     &__UL {
       @include tablet {
         display: flex;
         justify-content: center;
-        //
       }
     }
   }
 
   &-ul {
     list-style: none;
-    // display: flex;
     flex-wrap: wrap;
     transition: transform 0.5s ease-in-out;
     @include tablet {
       flex-wrap: nowrap;
+    }
+    &__group {
+      position: relative;
+    }
+    &__save {
+      position: absolute;
+      top: 0;
+      right: 1rem;
     }
   }
 
