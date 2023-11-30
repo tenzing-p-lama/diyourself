@@ -9,6 +9,11 @@ import "./ProjectsPage.scss";
 const ProjectsPage = () => {
   const [projectsList, setProjects] = useState([]);
   const containerRef = useRef(null);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [likedProjects, setLikedProjects] = useState(() => {
+    const likedProjectsFromStorage = localStorage.getItem("likedProjects");
+    return likedProjectsFromStorage ? JSON.parse(likedProjectsFromStorage) : [];
+  });
 
   const midpoint = Math.ceil(projectsList.length / 2);
   const firstHalf = projectsList.slice(0, midpoint);
@@ -24,32 +29,48 @@ const ProjectsPage = () => {
     fetchProjects();
   }, []);
 
-  //
-  //
-  const [likedProjects, setLikedProjects] = useState(() => {
-    const likedProjectsFromStorage = localStorage.getItem("likedProjects");
-    return likedProjectsFromStorage ? JSON.parse(likedProjectsFromStorage) : [];
-  });
-
-  // Function to handle saving a project
   const handleSaveProject = (projectId) => {
-    // Check if the project is already in likedProjects
     if (!likedProjects.includes(projectId)) {
-      // If not, add it to likedProjects
       const updatedLikedProjects = [...likedProjects, projectId];
       setLikedProjects(updatedLikedProjects);
-      // Save likedProjects to localStorage
       localStorage.setItem(
         "likedProjects",
         JSON.stringify(updatedLikedProjects)
       );
     }
   };
-  //
-  //
+
+  // Apply category filter to both lists
+  const filteredFirstHalf = firstHalf.filter(
+    (project) => !selectedCategory || project.category === selectedCategory
+  );
+
+  const filteredSecondHalf = secondHalf.filter(
+    (project) => !selectedCategory || project.category === selectedCategory
+  );
 
   return (
     <main className="projects">
+      <div className="projects-filter">
+        <label className="projects-filter__menu">
+          <h3>Filter by Category:</h3>
+          <select
+            className="projects-filter__dropdown"
+            value={selectedCategory || ""}
+            onChange={(e) => setSelectedCategory(e.target.value || null)}
+          >
+            <option value="">All</option>
+            {Array.from(
+              new Set(projectsList.map((project) => project.category))
+            ).map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
+
       <div className="projects-container">
         <div
           id="container"
@@ -57,7 +78,7 @@ const ProjectsPage = () => {
           className="projects-container__UL"
         >
           <ul className="projects-ul" style={{ overflowY: "auto" }}>
-            {firstHalf.map((project) => (
+            {filteredFirstHalf.map((project) => (
               <div key={project.id} className="projects-ul__group">
                 <div className="projects-item">
                   <Link to={`/projects/${project.id}`}>
@@ -91,7 +112,7 @@ const ProjectsPage = () => {
           </ul>
 
           <ul className="projects-ul" style={{ overflowY: "auto" }}>
-            {secondHalf.map((project) => (
+            {filteredSecondHalf.map((project) => (
               <div key={project.id} className="projects-ul__group">
                 <div className="projects-item">
                   <Link to={`/projects/${project.id}`}>

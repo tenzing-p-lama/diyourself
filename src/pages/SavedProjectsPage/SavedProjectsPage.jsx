@@ -36,14 +36,13 @@ const SavedProjectsPage = () => {
               })
           )
         );
-        setProjectDetails(projectsDetails.filter(Boolean)); // Filter out null values
+        setProjectDetails(projectsDetails.filter(Boolean));
       };
 
       fetchDetails();
     }
   }, []);
 
-  // Function to remove a project from the saved list
   const handleRemoveProject = (projectId) => {
     const updatedSavedProjects = savedProjects.filter(
       (savedProject) => savedProject !== projectId
@@ -52,7 +51,6 @@ const SavedProjectsPage = () => {
       (project) => project.id !== projectId
     );
 
-    // Update state and localStorage
     setSavedProjects(updatedSavedProjects);
     setProjectDetails(updatedProjectDetails);
     localStorage.setItem("likedProjects", JSON.stringify(updatedSavedProjects));
@@ -67,7 +65,7 @@ const SavedProjectsPage = () => {
       <Link to="/projects" className="savedprojects-button">
         <FontAwesomeIcon
           icon={faArrowLeft}
-          size="xl"
+          size="lg"
           style={{
             color: "#000000",
             cursor: "pointer",

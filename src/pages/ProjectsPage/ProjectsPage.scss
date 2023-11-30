@@ -9,6 +9,25 @@
     white-space: nowrap;
   }
 
+  &-filter {
+    padding: 1rem 3rem;
+    &__menu {
+      display: flex;
+      align-items: center;
+    }
+    &__dropdown {
+      border: 1px solid black;
+      font-size: 12px;
+      padding: 1rem;
+      margin-left: 1rem;
+
+      // &-dropdown {
+      //   padding: 0.1rem 5rem 0.1rem 0.5rem;
+      //   height: 50px;
+      // }
+    }
+  }
+
   &-container {
     &__UL {
       @include tablet {
