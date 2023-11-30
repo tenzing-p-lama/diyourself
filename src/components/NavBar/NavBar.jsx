@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./NavBar.scss";
 import { NavLink, Link, useLocation } from "react-router-dom";
 import Hamburger from "../Hamburger/Hamburger";
@@ -10,6 +10,10 @@ const NavBar = () => {
   const toggleHamburger = () => {
     setHamburger(!hamburger);
   };
+
+  useEffect(() => {
+    setHamburger(false);
+  }, [location.pathname]);
 
   return (
     <div className={location.pathname === "/" ? "navbar" : "navbar-top"}>
