@@ -259,7 +259,7 @@ function UploadPage() {
                   rows="10"
                   placeholder="Please list the cut list for your project - separated by commas"
                   className="upload-project__input"
-                  value={values.cutlist}
+                  defaultValue={values.cutlist}
                   onFocus={() => handleAutoFill("cutlist")}
                   required
                 />
