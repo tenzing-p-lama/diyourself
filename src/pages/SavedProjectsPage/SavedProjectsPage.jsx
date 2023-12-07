@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import projectsJSON from "../../data/projects.json";
 
 import "./SavedProjectsPage.scss";
 
@@ -23,19 +24,25 @@ const SavedProjectsPage = () => {
 
       // Fetch details for each saved project
       const fetchDetails = async () => {
-        const projectsDetails = await Promise.all(
-          parsedLikedProjects.map((projectId) =>
-            axios
-              .get(
-                `https://diyourself-986a58a2ea07.herokuapp.com/projects/${projectId}`
-              )
-              .then((response) => response.data)
-              .catch((error) => {
-                console.error("Error fetching project details", error);
-                return null;
-              })
-          )
+        // const projectsDetails = await Promise.all(
+        //   parsedLikedProjects.map((projectId) =>
+        //     axios
+        //       .get(
+        //         `https://diyourself-986a58a2ea07.herokuapp.com/projects/${projectId}`
+        //       )
+        //       .then((response) => response.data)
+        //       .catch((error) => {
+        //         console.error("Error fetching project details", error);
+        //         return null;
+        //       })
+        //   )
+        // );
+
+        // Replace Axios calls with direct references to projectsJSON
+        const projectsDetails = parsedLikedProjects.map((projectId) =>
+          projectsJSON.find((project) => project.id === projectId)
         );
+
         setProjectDetails(projectsDetails.filter(Boolean));
       };
 

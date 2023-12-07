@@ -1,13 +1,16 @@
 import "./UploadPage.scss";
 import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
-import { useState } from "react";
+// import axios from "axios";
+import { useState, useEffect } from "react";
+import projectsJSON from "../../data/projects.json";
+import { v4 as uuidv4 } from "uuid";
 
 import upload from "../../assets/images/upload.jpg";
 import stepimg from "../../assets/images/planning.jpg";
 
 function UploadPage() {
   const navigate = useNavigate();
+  const [projectsJSON, setProjectsJSON] = useState([]);
 
   // steps
   const [steps, setSteps] = useState([
@@ -41,7 +44,43 @@ function UploadPage() {
     });
   };
 
-  const handleFormSubmit = async (event) => {
+  // const handleFormSubmit = async (event) => {
+  //   event.preventDefault();
+
+  //   const updatedSteps = steps.map((step) => ({
+  //     ...step,
+  //     stepNumber: `Step ${step.stepNumber}:`,
+  //   }));
+
+  //   try {
+  //     const response = await axios.post(
+  //       `https://diyourself-986a58a2ea07.herokuapp.com/projects`,
+  //       {
+  //         title: event.target.title.value,
+  //         image: ["/images/upload.jpg"],
+  //         description: event.target.description.value,
+  //         category: event.target.category.value,
+  //         materials: event.target.materials.value
+  //           .split(",")
+  //           .map((item) => item.trim()),
+  //         toolsRequired: event.target.tools.value
+  //           .split(",")
+  //           .map((item) => item.trim()),
+  //         cutList: event.target.cutlist.value
+  //           .split(",")
+  //           .map((item) => item.trim()),
+  //         steps:
+  //           updatedSteps.length > 0 ? updatedSteps.slice(0) : steps.slice(0),
+  //       }
+  //     );
+  //     navigate("/projects");
+  //   } catch (err) {
+  //     console.log("Project not uploaded", err);
+  //   }
+  // };
+
+  //use projectsJSON instead of making axios request
+  const handleFormSubmit = (event) => {
     event.preventDefault();
 
     const updatedSteps = steps.map((step) => ({
@@ -49,32 +88,48 @@ function UploadPage() {
       stepNumber: `Step ${step.stepNumber}:`,
     }));
 
-    try {
-      const response = await axios.post(
-        `https://diyourself-986a58a2ea07.herokuapp.com/projects`,
-        {
-          title: event.target.title.value,
-          image: ["/images/upload.jpg"],
-          description: event.target.description.value,
-          category: event.target.category.value,
-          materials: event.target.materials.value
-            .split(",")
-            .map((item) => item.trim()),
-          toolsRequired: event.target.tools.value
-            .split(",")
-            .map((item) => item.trim()),
-          cutList: event.target.cutlist.value
-            .split(",")
-            .map((item) => item.trim()),
-          steps:
-            updatedSteps.length > 0 ? updatedSteps.slice(0) : steps.slice(0),
-        }
-      );
-      navigate("/projects");
-    } catch (err) {
-      console.log("Project not uploaded", err);
-    }
+    // Generate a unique ID for the new project
+    const projectId = uuidv4().toString();
+
+    // Update the local JSON file
+    const newProject = {
+      id: projectId,
+      title: event.target.title.value,
+      image: ["/images/upload.jpg"],
+      description: event.target.description.value,
+      category: event.target.category.value,
+      materials: event.target.materials.value
+        .split(",")
+        .map((item) => item.trim()),
+      toolsRequired: event.target.tools.value
+        .split(",")
+        .map((item) => item.trim()),
+      cutList: event.target.cutlist.value.split(",").map((item) => item.trim()),
+      steps: updatedSteps.length > 0 ? updatedSteps.slice(0) : steps.slice(0),
+    };
+
+    // Retrieve existing projects from localStorage
+    const storedProjectsJSON =
+      JSON.parse(localStorage.getItem("projectsJSON")) || [];
+    // Update the local JSON data
+    const updatedProjects = [...storedProjectsJSON, newProject];
+
+    localStorage.setItem("projectsJSON", JSON.stringify(updatedProjects));
+
+    // Update state with existing projects
+    setProjectsJSON(updatedProjects);
+
+    navigate("/projects");
   };
+
+  useEffect(() => {
+    // Retrieve projects from localStorage when the component mounts
+    const storedProjectsJSON =
+      JSON.parse(localStorage.getItem("projectsJSON")) || [];
+
+    // Update state with existing projects
+    setProjectsJSON(storedProjectsJSON);
+  }, []);
 
   const categories = ["Table", "Dresser", "Vanity", "Cabinet", "Bench"];
   const predefinedValues = {

@@ -1,13 +1,16 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+import projectsJSON from "../../data/projects.json";
 
 import "./ProjectsPage.scss";
 
 const ProjectsPage = () => {
   const [projectsList, setProjects] = useState([]);
+  // const [projectsList, setProjects] = useState(projectsJSON);
+
   const containerRef = useRef(null);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [likedProjects, setLikedProjects] = useState(() => {
@@ -20,14 +23,20 @@ const ProjectsPage = () => {
   const secondHalf = projectsList.slice(midpoint);
 
   useEffect(() => {
-    async function fetchProjects() {
-      const response = await axios.get(
-        `https://diyourself-986a58a2ea07.herokuapp.com/projects`
-      );
-      setProjects(response.data);
-    }
-    fetchProjects();
-  }, []);
+    const storedProjectsJSON =
+      JSON.parse(localStorage.getItem("projectsJSON")) || [];
+    setProjects([...projectsJSON, ...storedProjectsJSON]);
+  }, [projectsJSON]);
+
+  // useEffect(() => {
+  //   async function fetchProjects() {
+  //     const response = await axios.get(
+  //       `https://diyourself-986a58a2ea07.herokuapp.com/projects`
+  //     );
+  //     setProjects(response.data);
+  //   }
+  //   fetchProjects();
+  // }, []);
 
   const handleSaveProject = (projectId) => {
     if (!likedProjects.includes(projectId)) {

@@ -1,27 +1,34 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
+import projectsJSON from "../../data/projects.json";
 
 import ImageGallery from "../../components/ImageGallery/ImageGallery.jsx";
 import "./ProjectDetailsPage.scss";
 
 function ProjectDetailsPage() {
   const { id } = useParams();
-  const [projectDetails, setProjectDetails] = useState(null);
+  // const [projectDetails, setProjectDetails] = useState(null);
 
-  useEffect(() => {
-    async function fetchProjectDetails() {
-      try {
-        const response = await axios.get(
-          `https://diyourself-986a58a2ea07.herokuapp.com/projects/${id}`
-        );
-        setProjectDetails(response.data);
-      } catch (error) {
-        console.error("Error fetching project details:", error);
-      }
-    }
-    fetchProjectDetails();
-  }, [id]);
+  //use projectsJSON instead of axios fetch
+  const [projectsList, setProjects] = useState(projectsJSON);
+  const projectDetails = projectsList.find(
+    (project) => project.id === id.toString()
+  );
+
+  // useEffect(() => {
+  //   async function fetchProjectDetails() {
+  //     try {
+  //       const response = await axios.get(
+  //         `https://diyourself-986a58a2ea07.herokuapp.com/projects/${id}`
+  //       );
+  //       setProjectDetails(response.data);
+  //     } catch (error) {
+  //       console.error("Error fetching project details:", error);
+  //     }
+  //   }
+  //   fetchProjectDetails();
+  // }, [id]);
 
   return (
     <>
