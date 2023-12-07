@@ -5,6 +5,25 @@ import Hamburger from "../Hamburger/Hamburger";
 
 const NavBar = () => {
   const location = useLocation();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 300);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  const navBarStyle = {
+    backgroundColor: isScrolled ? "white" : "transparent",
+    transition: "background-color 0.5s ease-out",
+  };
 
   const [hamburger, setHamburger] = useState(false);
   const toggleHamburger = () => {
@@ -17,21 +36,21 @@ const NavBar = () => {
 
   return (
     <div className={location.pathname === "/" ? "navbar" : "navbar-top"}>
-      <nav className="nav">
-        <NavLink to="/" className="nav-logo">
+      <nav className="nav" style={navBarStyle}>
+        <NavLink to="/" onClick={handleScrollToTop} className="nav-logo">
           <h1 className="nav-logo nav-logo__text">diy</h1>
         </NavLink>
 
         <section className="nav-menu">
           <ul className={hamburger ? "nav-links" : "nav-links__close"}>
-            <Link
+            {/* <Link
               to="/projects"
               className={`nav-link ${
                 location.pathname === "/projects" ? "active" : ""
               }`}
             >
               Projects
-            </Link>
+            </Link> */}
 
             <Link
               to="/projects/saved"
